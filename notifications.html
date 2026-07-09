@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><i class="fa-solid fa-house"></i> Dashboard</li>
+            <li><i class="fa-solid fa-desktop"></i> Screen</li>
+            <li><i class="fa-solid fa-photo-film"></i> Content</li>
+            <li><i class="fa-solid fa-list"></i> Playlist</li>
+            <li><i class="fa-solid fa-calendar-days"></i> Schedule</li>
+            <li><i class="fa-solid fa-database"></i> Storage</li>
+            <li><i class="fa-solid fa-tv"></i> Device</li>
+            <li><i class="fa-brands fa-android"></i> App</li>
+
+            <li class="active has-submenu">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Settings</span>
+
+                    <i class="fa-solid fa-chevron-down submenu-arrow rotate"></i>
+
+                </a>
+
+                <ul class="submenu show">
+
+                    <li>
+
+                        <a href="user.html">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            User
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="notifications.html">
+
+                            <i class="fa-regular fa-bell"></i>
+
+                            Notifications
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="about.html">
+
+                            <i class="fa-regular fa-circle-question"></i>
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Notifications
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="user">
+
+                    <button id="userBtn">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <!-- HEADER -->
+
+            <div class="notification-header">
+
+                <div>
+
+                    <h1>Notifications</h1>
+
+                    <p>Stay informed about your screens, schedules, and devices.</p>
+
+                </div>
+
+                <div class="notification-actions">
+
+                    <button class="outline-btn">
+
+                        <i class="fa-solid fa-check-double"></i>
+
+                        Mark All Read
+
+                    </button>
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-trash"></i>
+
+                        Clear All
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- SUMMARY -->
+
+            <div class="summary-grid">
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-envelope-open"></i>
+
+                    <h2>5</h2>
+
+                    <p>Unread</p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-calendar-day"></i>
+
+                    <h2>12</h2>
+
+                    <p>Today</p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-calendar-week"></i>
+
+                    <h2>34</h2>
+
+                    <p>This Week</p>
+
+                </div>
+
+            </div>
+
+            <!-- TOOLBAR -->
+
+            <div class="notification-toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" placeholder="Search notification...">
+
+                </div>
+
+                <div class="toolbar-right">
+
+                    <select>
+
+                        <option>All</option>
+
+                        <option>Unread</option>
+
+                        <option>Device</option>
+
+                        <option>Schedule</option>
+
+                        <option>Storage</option>
+
+                        <option>Account</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- LIST -->
+
+            <div class="notification-list">
+
+                <!-- ITEM -->
+
+                <div class="notification-item unread device">
+
+                    <div class="notify-icon online">
+
+                        <i class="fa-solid fa-tv"></i>
+
+                    </div>
+
+                    <div class="notify-content">
+
+                        <h3>Device Online</h3>
+
+                        <p>Lobby LED Player has successfully connected.</p>
+
+                    </div>
+
+                    <div class="notify-time">
+
+                        5 min ago
+
+                    </div>
+
+                    <span class="badge unread">
+
+                        Unread
+
+                    </span>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="notification-item unread schedule">
+
+                    <div class="notify-icon schedule">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                    </div>
+
+                    <div class="notify-content">
+
+                        <h3>Schedule Published</h3>
+
+                        <p>Morning Playlist has been published successfully.</p>
+
+                    </div>
+
+                    <div class="notify-time">
+
+                        Today
+
+                    </div>
+
+                    <span class="badge unread">
+
+                        Unread
+
+                    </span>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="notification-item storage">
+
+                    <div class="notify-icon storage">
+
+                        <i class="fa-solid fa-database"></i>
+
+                    </div>
+
+                    <div class="notify-content">
+
+                        <h3>Storage Warning</h3>
+
+                        <p>Your storage has reached 80% usage.</p>
+
+                    </div>
+
+                    <div class="notify-time">
+
+                        Yesterday
+
+                    </div>
+
+                    <span class="badge read">
+
+                        Read
+
+                    </span>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="notification-item account">
+
+                    <div class="notify-icon account">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div class="notify-content">
+
+                        <h3>Password Updated</h3>
+
+                        <p>Your account password has been changed successfully.</p>
+
+                    </div>
+
+                    <div class="notify-time">
+
+                        2 days ago
+
+                    </div>
+
+                    <span class="badge read">
+
+                        Read
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/notifications.js"></script>
+
+</body>
+
+</html>

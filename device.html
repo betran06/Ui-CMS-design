@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Device | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/device.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Device
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="live-status">
+
+                    <span class="dot"></span>
+
+                    Live
+
+                </div>
+
+                <div class="notification">
+
+                    <button id="notificationBtn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                    <div class="notification-menu">
+
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+
+                            1 Device Offline
+
+                        </div>
+
+                        <div class="notify-item">
+
+                            New Device Registered
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="user">
+
+                    <button id="userBtn">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="user-menu">
+
+                        <div class="user-info">
+
+                            <strong>Betran Arya</strong>
+
+                            <small>betran@email.com</small>
+
+                        </div>
+
+                        <hr>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            Settings
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            Sign Out
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <!-- SUMMARY -->
+
+            <div class="summary-grid">
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-circle text-success"></i>
+
+                    <h2>12</h2>
+
+                    <p>Online</p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-circle text-danger"></i>
+
+                    <h2>3</h2>
+
+                    <p>Offline</p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-tv"></i>
+
+                    <h2>15</h2>
+
+                    <p>Total Device</p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-signal"></i>
+
+                    <h2>98%</h2>
+
+                    <p>Connection</p>
+
+                </div>
+
+            </div>
+
+            <!-- FILTER -->
+
+            <div class="device-toolbar">
+                <button class="primary-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Register Device
+
+                </button>
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" placeholder="Search device...">
+
+                </div>
+
+
+                <div class="toolbar-right">
+
+                    <select>
+
+                        <option>All Status</option>
+
+                        <option>Online</option>
+
+                        <option>Offline</option>
+
+                    </select>
+
+                    <select>
+
+                        <option>All Location</option>
+
+                        <option>Lobby</option>
+
+                        <option>Meeting Room</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- DEVICE LIST -->
+
+            <div class="device-list">
+
+                <!-- DEVICE -->
+
+                <div class="device-item online">
+
+                    <div class="device-status">
+
+                        <span class="status-dot online"></span>
+
+                    </div>
+
+                    <div class="device-info">
+
+                        <h3>Lobby LED Player</h3>
+
+                        <small>Android Player</small>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Serial Number</strong>
+
+                        <p>SN-AXK-2026-001245</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>IP Address</strong>
+
+                        <p>192.168.1.20</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Location</strong>
+
+                        <p>Lobby</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Version</strong>
+
+                        <p>v1.2.5</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Heartbeat</strong>
+
+                        <p>5 sec ago</p>
+
+                    </div>
+
+                    <div class="device-action">
+
+                        <button class="outline-btn">
+
+                            Detail
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- DEVICE -->
+
+                <div class="device-item offline">
+
+                    <div class="device-status">
+
+                        <span class="status-dot offline"></span>
+
+                    </div>
+
+                    <div class="device-info">
+
+                        <h3>Meeting Room TV</h3>
+
+                        <small>Windows Player</small>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Serial Number</strong>
+
+                        <p>SN-WIN-2026-001846</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>IP Address</strong>
+
+                        <p>192.168.1.31</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Location</strong>
+
+                        <p>Meeting Room</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Version</strong>
+
+                        <p>v1.2.2</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Last Seen</strong>
+
+                        <p>Yesterday 18:42</p>
+
+                    </div>
+
+                    <div class="device-action">
+
+                        <button class="outline-btn">
+
+                            Detail
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/device.js"></script>
+
+</body>
+
+</html>

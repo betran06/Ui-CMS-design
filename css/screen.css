@@ -1,0 +1,940 @@
+/* ===================================================
+   SCREEN PAGE
+=================================================== */
+
+.screen-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.screen-header h1 {
+
+    font-size: 34px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+
+}
+
+.screen-header p {
+
+    color: #6B7280;
+    font-size: 15px;
+
+}
+
+.screen-count {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #fff;
+
+    padding: 14px 22px;
+
+    border-radius: 14px;
+
+    border: 1px solid #E5E7EB;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
+
+    font-weight: 600;
+
+}
+
+
+/* ===================================================
+   TOOLBAR
+=================================================== */
+
+.toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+.toolbar-left,
+
+.toolbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+/* ===================================================
+   BUTTON
+=================================================== */
+
+.primary-btn {
+
+    background: #2563EB;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 14px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.primary-btn:hover {
+
+    background: #1D4ED8;
+
+    transform: translateY(-3px);
+
+}
+
+.secondary-btn {
+
+    background: #fff;
+
+    color: #2563EB;
+
+    border: 1px solid #2563EB;
+
+    padding: 14px 22px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.secondary-btn:hover {
+
+    background: #EFF6FF;
+
+}
+
+.outline-btn {
+
+    background: #fff;
+
+    border: 1px solid #D1D5DB;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.outline-btn:hover {
+
+    background: #2563EB;
+
+    color: #fff;
+
+    border-color: #2563EB;
+
+}
+
+
+/* ===================================================
+   ICON BUTTON
+=================================================== */
+
+.icon-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    border: 1px solid #E5E7EB;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.icon-btn:hover {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}
+
+
+/* ===================================================
+   SELECT
+=================================================== */
+
+.toolbar select {
+
+    height: 46px;
+
+    padding: 0 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid #E5E7EB;
+
+    background: #fff;
+
+    cursor: pointer;
+
+    outline: none;
+
+    font-size: 14px;
+
+}
+
+
+/* ===================================================
+   GRID
+=================================================== */
+
+.screen-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+
+    gap: 28px;
+
+}
+
+
+/* ===================================================
+   CARD
+=================================================== */
+
+.screen-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #E5E7EB;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .05);
+
+    transition: .35s;
+
+}
+
+.screen-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .08);
+
+}
+
+
+/* ===================================================
+   IMAGE
+=================================================== */
+
+.screen-image {
+
+    aspect-ratio: 16/9;
+
+    overflow: hidden;
+
+    background: #F3F4F6;
+
+}
+
+.screen-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s;
+
+}
+
+.screen-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ===================================================
+   INFO
+=================================================== */
+
+.screen-info {
+
+    padding: 22px;
+
+}
+
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.screen-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+
+}
+
+.screen-title h2 {
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+.screen-title button {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #F9FAFB;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.screen-title button:hover {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}
+
+
+/* ===================================================
+   BADGE
+=================================================== */
+
+.badge-group {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+.badge {
+
+    padding: 8px 14px;
+
+    border-radius: 100px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border: 1px solid #E5E7EB;
+
+}
+
+.badge.success {
+
+    background: #ECFDF5;
+
+    color: #16A34A;
+
+}
+
+.badge.offline {
+
+    background: #FEF2F2;
+
+    color: #DC2626;
+
+}
+
+.badge.playing {
+
+    background: #FFF7ED;
+
+    color: #EA580C;
+
+}
+
+
+/* ===================================================
+   DETAIL
+=================================================== */
+
+.screen-detail {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    color: #6B7280;
+
+    margin-bottom: 22px;
+
+}
+
+.screen-detail div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+/* ===================================================
+   ACTION
+=================================================== */
+
+.screen-action {
+
+    display: flex;
+
+    gap: 14px;
+
+}
+
+/* ===================================================
+   STATUS DOT
+=================================================== */
+
+.badge.success::before,
+.badge.offline::before,
+.badge.playing::before {
+
+    content: "";
+
+    width: 8px;
+
+    height: 8px;
+
+    display: inline-block;
+
+    margin-right: 8px;
+
+    border-radius: 50%;
+
+}
+
+.badge.success::before {
+
+    background: #22C55E;
+
+    animation: pulse 2s infinite;
+
+}
+
+.badge.offline::before {
+
+    background: #EF4444;
+
+}
+
+.badge.playing::before {
+
+    background: #F97316;
+
+}
+
+@keyframes pulse {
+
+    0% {
+
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, .6);
+
+    }
+
+    70% {
+
+        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+
+    }
+
+    100% {
+
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+
+    }
+
+}
+
+
+/* ===================================================
+   DROPDOWN MENU
+=================================================== */
+
+.dropdown {
+
+    position: relative;
+
+}
+
+.dropdown-menu {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 48px;
+
+    width: 190px;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+
+    border: 1px solid #E5E7EB;
+
+    display: none;
+
+    overflow: hidden;
+
+    z-index: 10;
+
+}
+
+.dropdown-menu.show {
+
+    display: block;
+
+    animation: fadeMenu .25s;
+
+}
+
+.dropdown-menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 18px;
+
+    color: #111827;
+
+    transition: .2s;
+
+}
+
+.dropdown-menu a:hover {
+
+    background: #F8FAFC;
+
+    color: #2563EB;
+
+}
+
+@keyframes fadeMenu {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ===================================================
+   EMPTY STATE
+=================================================== */
+
+.empty-screen {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    display: none;
+
+}
+
+.empty-screen img {
+
+    width: 220px;
+
+    margin-bottom: 25px;
+
+}
+
+.empty-screen h2 {
+
+    margin-bottom: 10px;
+
+}
+
+.empty-screen p {
+
+    color: #6B7280;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ===================================================
+   SKELETON
+=================================================== */
+
+.skeleton {
+
+    background: linear-gradient(90deg,
+            #F3F4F6 25%,
+            #E5E7EB 50%,
+            #F3F4F6 75%);
+
+    background-size: 200% 100%;
+
+    animation: skeleton 1.4s infinite;
+
+}
+
+@keyframes skeleton {
+
+    from {
+
+        background-position: 200%;
+
+    }
+
+    to {
+
+        background-position: -200%;
+
+    }
+
+}
+
+
+/* ===================================================
+   FLOATING BUTTON
+=================================================== */
+
+.fab {
+
+    position: fixed;
+
+    right: 30px;
+
+    bottom: 30px;
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #2563EB;
+
+    color: #fff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    box-shadow: 0 15px 40px rgba(37, 99, 235, .35);
+
+    transition: .3s;
+
+}
+
+.fab:hover {
+
+    transform: translateY(-6px) rotate(90deg);
+
+}
+
+
+/* ===================================================
+   GLASS TOOLBAR
+=================================================== */
+
+.toolbar {
+
+    position: sticky;
+
+    top: 75px;
+
+    background: rgba(245, 247, 251, .85);
+
+    backdrop-filter: blur(18px);
+
+    padding: 18px 0;
+
+    z-index: 20;
+
+}
+
+
+/* ===================================================
+   SCROLL ANIMATION
+=================================================== */
+
+.screen-card {
+
+    animation: cardFade .5s ease;
+
+}
+
+@keyframes cardFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:1200px) {
+
+    .screen-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:900px) {
+
+    .toolbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .toolbar-left,
+
+    .toolbar-right {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .screen-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .screen-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+    .primary-btn,
+
+    .secondary-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .toolbar-left {
+
+        flex-direction: column;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .toolbar select {
+
+        width: 100%;
+
+    }
+
+    .icon-btn {
+
+        flex: 1;
+
+    }
+
+    .screen-action {
+
+        flex-direction: column;
+
+    }
+
+    .outline-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* ===================================================
+   HOVER EFFECT
+=================================================== */
+
+.screen-card {
+
+    overflow: hidden;
+
+}
+
+.screen-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #2563EB;
+
+    transform: scaleX(0);
+
+    transition: .3s;
+
+    transform-origin: left;
+
+}
+
+.screen-card {
+
+    position: relative;
+
+}
+
+.screen-card:hover::after {
+
+    transform: scaleX(1);
+
+}
+
+
+/* ===================================================
+   CUSTOM SELECTION
+=================================================== */
+
+::selection {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}

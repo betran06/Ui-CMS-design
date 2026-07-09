@@ -1,0 +1,1026 @@
+/* ==================================================
+   CONTENT PAGE
+================================================== */
+
+.content-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.content-header h1 {
+
+    font-size: 34px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+
+}
+
+.content-header p {
+
+    color: #6B7280;
+    font-size: 15px;
+
+}
+
+.content-count {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 14px;
+
+    padding: 14px 22px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+
+    font-weight: 600;
+
+}
+
+
+/* ==================================================
+   TOOLBAR
+================================================== */
+
+.toolbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+.toolbar-left,
+.toolbar-right {
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+}
+
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+.search-box {
+
+    width: 320px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #fff;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 14px;
+
+    padding: 0 18px;
+
+    height: 48px;
+
+}
+
+.search-box i {
+
+    color: #9CA3AF;
+
+}
+
+.search-box input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: none;
+
+    font-size: 15px;
+
+}
+
+
+/* ==================================================
+   SELECT
+================================================== */
+
+.toolbar select {
+
+    height: 48px;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    padding: 0 16px;
+
+    cursor: pointer;
+
+}
+
+
+/* ==================================================
+   CONTENT LIST
+================================================== */
+
+.content-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+
+/* ==================================================
+   CARD
+================================================== */
+
+.content-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    border: 1px solid #E5E7EB;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .05);
+
+    padding: 20px;
+
+    display: flex;
+
+    gap: 25px;
+
+    transition: .35s;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.content-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .08);
+
+}
+
+.content-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 0;
+    height: 4px;
+
+    background: #2563EB;
+
+    transition: .35s;
+
+}
+
+.content-card:hover::before {
+
+    width: 100%;
+
+}
+
+
+/* ==================================================
+   THUMBNAIL
+================================================== */
+
+.content-thumb {
+
+    width: 240px;
+
+    min-width: 240px;
+
+    aspect-ratio: 16/9;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background: #F3F4F6;
+
+}
+
+.content-thumb img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .35s;
+
+}
+
+.content-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ==================================================
+   DURATION
+================================================== */
+
+.duration {
+
+    position: absolute;
+
+    left: 12px;
+
+    bottom: 12px;
+
+    background: rgba(0, 0, 0, .8);
+
+    color: #fff;
+
+    font-size: 12px;
+
+    padding: 5px 10px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==================================================
+   INFO
+================================================== */
+
+.content-info {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.title-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+}
+
+.title-row h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 14px;
+
+}
+
+
+/* ==================================================
+   FAVORITE
+================================================== */
+
+.favorite {
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #F9FAFB;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.favorite:hover {
+
+    background: #FEF3C7;
+
+    color: #F59E0B;
+
+}
+
+.favorite.active {
+
+    background: #F59E0B;
+
+    color: #fff;
+
+}
+
+
+/* ==================================================
+   BADGE
+================================================== */
+
+.badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px 14px;
+
+    border-radius: 100px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.badge.video {
+
+    background: #FFF7ED;
+
+    color: #EA580C;
+
+}
+
+.badge.image {
+
+    background: #ECFDF5;
+
+    color: #16A34A;
+
+}
+
+.badge.pdf {
+
+    background: #FEF2F2;
+
+    color: #DC2626;
+
+}
+
+.badge.audio {
+
+    background: #EEF2FF;
+
+    color: #4F46E5;
+
+}
+
+
+/* ==================================================
+   META
+================================================== */
+
+.meta {
+
+    display: flex;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+
+    margin-top: 18px;
+
+    color: #6B7280;
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================================
+   ACTION
+================================================== */
+
+.card-action {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* ==================================================
+   DANGER BUTTON
+================================================== */
+
+.danger-btn {
+
+    border: none;
+
+    background: #FEF2F2;
+
+    color: #DC2626;
+
+    border-radius: 12px;
+
+    padding: 12px 18px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.danger-btn:hover {
+
+    background: #DC2626;
+
+    color: #fff;
+
+}
+
+
+/* ==================================================
+   ANIMATION
+================================================== */
+
+.content-card {
+
+    animation: fadeUp .5s ease;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==================================================
+   GRID VIEW
+================================================== */
+
+.content-list.grid-view {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+
+    gap: 25px;
+
+}
+
+.content-list.grid-view .content-card {
+
+    flex-direction: column;
+
+    padding: 18px;
+
+}
+
+.content-list.grid-view .content-thumb {
+
+    width: 100%;
+
+    min-width: 100%;
+
+}
+
+.content-list.grid-view .meta {
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.content-list.grid-view .card-action {
+
+    margin-top: 20px;
+
+}
+
+
+/* ==================================================
+   EMPTY STATE
+================================================== */
+
+.empty-state {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+
+.empty-state img {
+
+    width: 220px;
+
+    margin-bottom: 25px;
+
+}
+
+.empty-state h2 {
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+}
+
+.empty-state p {
+
+    color: #6B7280;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==================================================
+   SKELETON
+================================================== */
+
+.skeleton {
+
+    background: linear-gradient(90deg,
+            #F3F4F6 25%,
+            #E5E7EB 50%,
+            #F3F4F6 75%);
+
+    background-size: 200% 100%;
+
+    animation: skeleton 1.4s infinite;
+
+}
+
+@keyframes skeleton {
+
+    from {
+
+        background-position: 200%;
+
+    }
+
+    to {
+
+        background-position: -200%;
+
+    }
+
+}
+
+
+/* ==================================================
+   GLASS TOOLBAR
+================================================== */
+
+.toolbar {
+
+    position: sticky;
+
+    top: 75px;
+
+    background: rgba(245, 247, 251, .88);
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+
+    padding: 16px 0;
+
+    z-index: 20;
+
+}
+
+
+/* ==================================================
+   FLOATING BUTTON
+================================================== */
+
+.fab-upload {
+
+    position: fixed;
+
+    right: 30px;
+
+    bottom: 30px;
+
+    width: 65px;
+
+    height: 65px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+
+    color: #fff;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 20px 45px rgba(37, 99, 235, .35);
+
+    transition: .3s;
+
+}
+
+.fab-upload:hover {
+
+    transform: translateY(-5px) rotate(90deg);
+
+}
+
+
+/* ==================================================
+   ACTION HOVER
+================================================== */
+
+.card-action button {
+
+    transition: .3s;
+
+}
+
+.card-action button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==================================================
+   FAVORITE ANIMATION
+================================================== */
+
+.favorite {
+
+    transition: .3s;
+
+}
+
+.favorite:hover {
+
+    transform: rotate(18deg) scale(1.1);
+
+}
+
+.favorite.active {
+
+    animation: favorite .4s;
+
+}
+
+@keyframes favorite {
+
+    0% {
+
+        transform: scale(.8);
+
+    }
+
+    70% {
+
+        transform: scale(1.25);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ==================================================
+   IMAGE SHADOW
+================================================== */
+
+.content-thumb img {
+
+    display: block;
+
+}
+
+.content-card:hover .content-thumb {
+
+    box-shadow:
+
+        0 15px 30px rgba(0, 0, 0, .12);
+
+}
+
+
+/* ==================================================
+   FILE TYPE ICON
+================================================== */
+
+.file-type {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #fff;
+
+    font-size: 18px;
+
+}
+
+.file-video {
+
+    background: #EA580C;
+
+}
+
+.file-image {
+
+    background: #16A34A;
+
+}
+
+.file-pdf {
+
+    background: #DC2626;
+
+}
+
+.file-audio {
+
+    background: #4F46E5;
+
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:1200px) {
+
+    .toolbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .toolbar-left,
+
+    .toolbar-right {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+    }
+
+    .search-box {
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width:992px) {
+
+    .content-card {
+
+        flex-direction: column;
+
+    }
+
+    .content-thumb {
+
+        width: 100%;
+
+        min-width: 100%;
+
+    }
+
+    .meta {
+
+        gap: 14px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .content-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+    .toolbar-left {
+
+        width: 100%;
+
+        flex-direction: column;
+
+    }
+
+    .primary-btn,
+
+    .secondary-btn {
+
+        width: 100%;
+
+    }
+
+    .toolbar-right {
+
+        width: 100%;
+
+    }
+
+    .toolbar select {
+
+        width: 100%;
+
+    }
+
+    .icon-btn {
+
+        flex: 1;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .card-action {
+
+        flex-direction: column;
+
+    }
+
+    .card-action button {
+
+        width: 100%;
+
+    }
+
+    .title-row {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+    }
+
+    .favorite {
+
+        align-self: flex-start;
+
+    }
+
+}
+
+
+/* ==================================================
+   CARD BORDER ANIMATION
+================================================== */
+
+.content-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 4px;
+
+    background: #2563EB;
+
+    transition: .35s;
+
+}
+
+.content-card:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* ==================================================
+   SCROLLBAR
+================================================== */
+
+.content-list::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.content-list::-webkit-scrollbar-thumb {
+
+    background: #CBD5E1;
+
+    border-radius: 20px;
+
+}
+
+
+/* ==================================================
+   CUSTOM SELECTION
+================================================== */
+
+::selection {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}

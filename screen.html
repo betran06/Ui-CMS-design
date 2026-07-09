@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Screen | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-display"></i>
+            <span>SignPlus CMS</span>
+        </div>
+
+        <ul class="menu">
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+        </ul>
+    </aside>
+
+    <!-- ================= Main ================= -->
+
+    <main class="main">
+        <!-- ================= Topbar ================= -->
+        <header class="topbar">
+            <div class="logo-text">
+                Screen
+            </div>
+
+            <div class="topbar-right">
+                <div class="notification">
+                    <button id="notificationBtn">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <div class="notification-menu">
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+                            Screen Lobby Online
+                        </div>
+
+                        <div class="notify-item">
+                            New Playlist Published
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <button id="userBtn">
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="user-menu">
+                        <div class="user-info">
+                            <strong>Betran Arya</strong>
+                            <small>betran@email.com</small>
+                        </div>
+                        <hr>
+
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================= Content ================= -->
+
+        <section class="content">
+            <!-- Header -->
+            <div class="screen-header">
+            </div>
+
+            <!-- Toolbar -->
+
+            <div class="toolbar">
+                <div class="toolbar-left">
+                    <button class="primary-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Screen
+                    </button>
+                    <button class="secondary-btn">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        New Screen Wall
+                    </button>
+                </div>
+                <div class="screen-count">
+                    <i class="fa-solid fa-desktop"></i>
+                    <span>2 Screens</span>
+                </div>
+
+                <div class="toolbar-right">
+                    <select>
+                        <option>Date</option>
+                        <option>Newest</option>
+                        <option>Oldest</option>
+                    </select>
+
+                    <select>
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                    </select>
+
+                    <button class="icon-btn">
+                        <i class="fa-solid fa-grip"></i>
+                    </button>
+
+                    <button class="icon-btn">
+                        <i class="fa-solid fa-list"></i>
+                    </button>
+
+                    <button class="icon-btn">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Screen Grid -->
+
+            <div class="screen-grid">
+                <!-- Card -->
+                <div class="screen-card">
+                    <div class="screen-image">
+                        <img src="https://placehold.co/500x280/111827/FFFFFF?text=SCREEN+PREVIEW">
+                    </div>
+
+                    <div class="screen-info">
+                        <div class="screen-title">
+                            <h2>Virtual Screen</h2>
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="badge-group">
+                            <span class="badge success">
+                                Connected
+                            </span>
+
+                            <span class="badge playing">
+                                Playing Default Content
+                            </span>
+                        </div>
+
+                        <div class="screen-detail">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Jakarta
+                            </div>
+
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                Last Sync 2 min ago
+                            </div>
+                        </div>
+
+                        <div class="screen-action">
+                            <button class="outline-btn">
+                                Preview
+                            </button>
+
+                            <button class="outline-btn">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+
+                <div class="screen-card">
+                    <div class="screen-image">
+                        <img src="https://placehold.co/500x280/F3F4F6/111827?text=OFFLINE">
+                    </div>
+
+                    <div class="screen-info">
+                        <div class="screen-title">
+                            <h2>Lobby LED</h2>
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="badge-group">
+                            <span class="badge offline">
+                                Offline
+                            </span>
+
+                            <span class="badge">
+                                No Playlist
+                            </span>
+                        </div>
+
+                        <div class="screen-detail">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Surabaya
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                Last Sync 30 min ago
+                            </div>
+                        </div>
+
+                        <div class="screen-action">
+                            <button class="outline-btn">
+                                Preview
+                            </button>
+
+                            <button class="outline-btn">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/screen.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Content | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= Main ================= -->
+
+    <main class="main">
+
+        <!-- ================= Topbar ================= -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Content
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <button id="notificationBtn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                    <div class="notification-menu">
+
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+
+                            New Content Uploaded
+
+                        </div>
+
+                        <div class="notify-item">
+
+                            Storage reaches 80%
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="user">
+
+                    <button id="userBtn">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="user-menu">
+
+                        <div class="user-info">
+
+                            <strong>Betran Arya</strong>
+
+                            <small>betran@email.com</small>
+
+                        </div>
+
+                        <hr>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            Settings
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            Sign Out
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= Content ================= -->
+
+        <section class="content">
+
+            <!-- Toolbar -->
+
+            <div class="toolbar">
+                <div class="content-count">
+
+                    <i class="fa-solid fa-photo-film"></i>
+
+                    <span>1 Content</span>
+
+                </div>
+
+                <div class="toolbar-left">
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Create Content
+
+                    </button>
+
+                    <button class="secondary-btn">
+
+                        <i class="fa-solid fa-upload"></i>
+
+                        Add Content
+
+                    </button>
+
+                </div>
+
+                <div class="toolbar-right">
+
+                    <select>
+
+                        <option>All Type</option>
+                        <option>Image</option>
+                        <option>Video</option>
+                        <option>PDF</option>
+                        <option>Audio</option>
+
+                    </select>
+
+                    <select>
+
+                        <option>Date</option>
+                        <option>Newest</option>
+                        <option>Oldest</option>
+
+                    </select>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-grip"></i>
+
+                    </button>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-list"></i>
+
+                    </button>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Content List ================= -->
+
+            <div class="content-list">
+
+                <!-- Card -->
+
+                <div class="content-card">
+
+                    <div class="content-thumb">
+
+                        <img src="https://placehold.co/400x230/111827/FFFFFF?text=VIDEO">
+
+                        <span class="duration">
+
+                            21.5 s
+
+                        </span>
+
+                    </div>
+
+                    <div class="content-info">
+
+                        <div class="title-row">
+
+                            <div>
+
+                                <h2>LED Promotion July 2026</h2>
+
+                                <span class="badge video">
+
+                                    Video
+
+                                </span>
+
+                            </div>
+
+                            <button class="favorite">
+
+                                <i class="fa-regular fa-star"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="meta">
+
+                            <span>1920 × 1080</span>
+
+                            <span>5.82 MB</span>
+
+                            <span>08 Jul 2026</span>
+
+                            <span>Uploaded by Betran</span>
+
+                        </div>
+
+                        <div class="card-action">
+
+                            <button class="outline-btn">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Preview
+
+                            </button>
+
+                            <button class="outline-btn">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                                Edit
+
+                            </button>
+
+                            <button class="outline-btn">
+
+                                <i class="fa-regular fa-copy"></i>
+
+                                Duplicate
+
+                            </button>
+
+                            <button class="danger-btn">
+
+                                <i class="fa-regular fa-trash-can"></i>
+
+                                Delete
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/content.js"></script>
+
+</body>
+
+</html>

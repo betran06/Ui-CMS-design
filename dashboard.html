@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-display"></i>
+            <span>SignPlus CMS</span>
+        </div>
+
+        <ul class="menu">
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+    </aside>
+
+    <!-- ================= Main ================= -->
+
+    <main class="main">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="logo-text">
+                SignPlus CMS
+            </div>
+
+            <div class="topbar-right">
+                <div class="notification">
+                    <button id="notificationBtn">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <div class="notification-menu">
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+                            Screen Jakarta Online
+                        </div>
+
+                        <div class="notify-item">
+                            Playlist Updated
+                        </div>
+
+                        <div class="notify-item">
+                            License expires in 28 days
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <button id="userBtn">
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+                        <span>Betran</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="user-menu">
+                        <div class="user-info">
+                            <strong>Betran Arya</strong>
+                            <small>betran@email.com</small>
+                        </div>
+
+                        <hr>
+
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+
+        <section class="content">
+            <!-- Company Card -->
+            <div class="company-card">
+                <div>
+                    <small>Company</small>
+                    <h2>PT ITPLUS Teknologi Indonesia</h2>
+                </div>
+
+                <div class="license">
+                    Enterprise License
+                </div>
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="stats">
+                <div class="card">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>24</h3>
+                    <p>Screen</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h3>540</h3>
+                    <p>Content</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-list"></i>
+                    <h3>18</h3>
+                    <p>Playlist</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>12</h3>
+                    <p>Schedule</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>76%</h3>
+                    <p>Storage</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-tv"></i>
+                    <h3>16</h3>
+                    <p>Device</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-brands fa-android"></i>
+                    <h3>1.5.0</h3>
+                    <p>App</p>
+                </div>
+            </div>
+
+            <!-- Grid -->
+
+            <div class="dashboard-grid">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Quick Glance</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="item">
+                            <span>Online Screens</span>
+                            <strong>21</strong>
+                        </div>
+
+                        <div class="item">
+                            <span>Offline Screens</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div class="item">
+                            <span>Running Playlist</span>
+                            <strong>12</strong>
+                        </div>
+
+                        <div class="item">
+                            <span>Upcoming Schedule</span>
+                            <strong>4</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Player Live</h3>
+                    </div>
+
+                    <div class="player-preview">
+                        LIVE PREVIEW
+                    </div>
+
+                    <div class="player-status">
+                        <span>Status</span>
+                        <strong class="online">● Online</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

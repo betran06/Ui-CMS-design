@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Profile | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+
+            <li class="active has-submenu">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Settings</span>
+
+                    <i class="fa-solid fa-chevron-down submenu-arrow rotate"></i>
+
+                </a>
+
+                <ul class="submenu show">
+
+                    <li class="active">
+
+                        <a href="user.html">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            User
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="notifications.html">
+
+                            <i class="fa-regular fa-bell"></i>
+
+                            Notifications
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="about.html">
+
+                            <i class="fa-regular fa-circle-question"></i>
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                User Profile
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <button id="notificationBtn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="user">
+
+                    <button id="userBtn">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <div class="profile-layout">
+
+                <!-- ================= LEFT ================= -->
+
+                <div class="profile-card">
+
+                    <div class="avatar-wrapper">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran+Arya&background=2563eb&color=fff&size=220">
+
+                    </div>
+
+                    <h2>Betran Arya</h2>
+
+                    <p>Administrator</p>
+
+                    <button class="secondary-btn">
+
+                        <i class="fa-solid fa-camera"></i>
+
+                        Change Photo
+
+                    </button>
+
+                    <div class="profile-info">
+
+                        <div>
+
+                            <span>Company</span>
+
+                            <strong>PT ITPLUS Teknologi Indonesia</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>Member Since</span>
+
+                            <strong>08 July 2026</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>Last Login</span>
+
+                            <strong>Today 08:15</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= RIGHT ================= -->
+
+                <div class="profile-content">
+
+                    <!-- PERSONAL -->
+
+                    <div class="card-section">
+
+                        <div class="section-title">
+
+                            <h2>
+
+                                Personal Information
+
+                            </h2>
+
+                            <p>
+
+                                Update your personal information.
+
+                            </p>
+
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label>First Name</label>
+
+                                <input type="text" value="Betran">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Last Name</label>
+
+                                <input type="text" value="Arya">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Email</label>
+
+                                <input type="email" value="betran@email.com">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Phone</label>
+
+                                <input type="text" value="+62 81234567890">
+
+                            </div>
+
+                            <div class="form-group full">
+
+                                <label>Company</label>
+
+                                <input type="text" value="PT ITPLUS Teknologi Indonesia">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACCOUNT -->
+
+                    <div class="card-section">
+
+                        <div class="section-title">
+
+                            <h2>
+
+                                Account Information
+
+                            </h2>
+
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label>Username</label>
+
+                                <input type="text" value="betran">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Role</label>
+
+                                <input type="text" value="Administrator" disabled>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SECURITY -->
+
+                    <div class="card-section">
+
+                        <div class="section-title">
+
+                            <h2>
+
+                                Change Password
+
+                            </h2>
+
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group full">
+
+                                <label>Current Password</label>
+
+                                <input type="password">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>New Password</label>
+
+                                <input type="password">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Confirm Password</label>
+
+                                <input type="password">
+
+                            </div>
+
+                        </div>
+
+                        <div class="button-group">
+
+                            <button class="primary-btn">
+
+                                <i class="fa-solid fa-floppy-disk"></i>
+
+                                Save Changes
+
+                            </button>
+
+                            <button class="outline-btn">
+
+                                Cancel
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/user.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    height: 72px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 70px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #2563eb;
+}
+
+.logo i {
+
+    font-size: 24px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.hero-content {
+
+    width: 100%;
+    max-width: 650px;
+
+    text-align: center;
+}
+
+.hero h1 {
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin-bottom: 24px;
+}
+
+.hero p {
+
+    font-size: 18px;
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+#loginBtn {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 18px 34px;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+#loginBtn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-3px);
+}
+
+#loginBtn i {
+
+    margin-right: 10px;
+}
+
+.register {
+
+    margin-top: 25px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+.register a {
+
+    text-decoration: none;
+
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+.register a:hover {
+
+    text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    height: 70px;
+
+    border-top: 1px solid #e5e7eb;
+
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    flex-wrap: wrap;
+}
+
+footer a {
+
+    color: #6b7280;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+footer a:hover {
+
+    color: #2563eb;
+}

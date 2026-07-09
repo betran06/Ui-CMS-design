@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Schedule
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <button id="notificationBtn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                    <div class="notification-menu">
+
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+
+                            New Schedule Published
+
+                        </div>
+
+                        <div class="notify-item">
+
+                            Playlist Updated
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="user">
+
+                    <button id="userBtn">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="user-menu">
+
+                        <div class="user-info">
+
+                            <strong>Betran Arya</strong>
+
+                            <small>betran@email.com</small>
+
+                        </div>
+
+                        <hr>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            Settings
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            Sign Out
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <!-- Toolbar -->
+
+            <div class="toolbar">
+
+                <div class="toolbar-left">
+
+                    <button class="primary-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        New Schedule
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="schedule-count">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>1 Schedule</span>
+
+                </div>
+
+                <div class="toolbar-right">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="text" placeholder="Search schedule...">
+
+                    </div>
+
+                    <select>
+
+                        <option>Date</option>
+                        <option>Newest</option>
+                        <option>Oldest</option>
+
+                    </select>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-grip"></i>
+
+                    </button>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-list"></i>
+
+                    </button>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Schedule List -->
+
+            <div class="schedule-list">
+
+                <!-- Card -->
+
+                <div class="schedule-card">
+
+                    <!-- Calendar -->
+
+                    <div class="schedule-calendar">
+
+                        <div class="calendar-date">
+
+                            <span class="day">08</span>
+
+                            <span class="month">JUL</span>
+
+                        </div>
+
+                        <div class="calendar-divider"></div>
+
+                        <div class="calendar-date">
+
+                            <span class="day">10</span>
+
+                            <span class="month">JUL</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Info -->
+
+                    <div class="schedule-info">
+
+                        <div class="schedule-title">
+
+                            <div>
+
+                                <h2>New Schedule</h2>
+
+                                <div class="schedule-top">
+
+                                    <span class="badge general">
+
+                                        General
+
+                                    </span>
+
+                                    <span class="status running">
+
+                                        Running
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <button class="favorite">
+
+                                <i class="fa-regular fa-star"></i>
+
+                            </button>
+
+                        </div>
+
+                        <!-- Meta -->
+
+                        <div class="schedule-meta">
+
+                            <span>
+
+                                <i class="fa-solid fa-list"></i>
+
+                                Playlist :
+                                New Playlist
+
+                            </span>
+
+                            <span>
+
+                                <i class="fa-solid fa-desktop"></i>
+
+                                Screen :
+                                Lobby LED
+
+                            </span>
+
+                            <span>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                08 Jul 2026
+                                08:00
+
+                            </span>
+
+                            <span>
+
+                                <i class="fa-regular fa-user"></i>
+
+                                Created by
+                                Betran
+
+                            </span>
+
+                        </div>
+
+                        <!-- Action -->
+
+                        <div class="schedule-action">
+
+                            <button class="outline-btn">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Preview
+
+                            </button>
+
+                            <button class="outline-btn">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                                Edit
+
+                            </button>
+
+                            <button class="outline-btn">
+
+                                <i class="fa-regular fa-copy"></i>
+
+                                Duplicate
+
+                            </button>
+
+                            <button class="danger-btn">
+
+                                <i class="fa-regular fa-trash-can"></i>
+
+                                Delete
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+
+            <div class="empty-state">
+
+                <img src="https://placehold.co/300x220/F3F4F6/6B7280?text=No+Schedule">
+
+                <h2>No Schedule Found</h2>
+
+                <p>Create your first schedule to publish playlist automatically.</p>
+
+                <button class="primary-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Create Schedule
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/schedule.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Storage | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/storage.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li>
+            <li class="has-submenu">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Settings</span>
+
+                    <i class="fa-solid fa-chevron-down submenu-arrow"></i>
+
+                </a>
+
+                <ul class="submenu">
+
+                    <li>
+                        <a href="user.html">
+                            <i class="fa-regular fa-user"></i>
+                            User
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-regular fa-circle-question"></i>
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Storage
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <button id="notificationBtn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                    <div class="notification-menu">
+
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+
+                            Storage reaches 68%
+
+                        </div>
+
+                        <div class="notify-item">
+
+                            12 Files Uploaded Today
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="user">
+
+                    <button id="userBtn">
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="user-menu">
+
+                        <div class="user-info">
+
+                            <strong>Betran Arya</strong>
+
+                            <small>betran@email.com</small>
+
+                        </div>
+
+                        <hr>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            Settings
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            Sign Out
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <!-- ================= STORAGE HERO ================= -->
+
+            <div class="storage-hero">
+
+                <div class="storage-left">
+
+                    <h1>Storage Manager</h1>
+
+                    <p>Monitor storage usage and manage uploaded files.</p>
+
+                    <div class="storage-progress">
+
+                        <div class="progress-info">
+
+                            <span>680 GB Used</span>
+
+                            <span>1 TB Total</span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"></div>
+
+                        </div>
+
+                        <div class="progress-percent">
+
+                            68% Used
+
+                        </div>
+
+                    </div>
+
+                    <div class="storage-action">
+
+                        <button class="primary-btn">
+
+                            <i class="fa-solid fa-upload"></i>
+
+                            Upload File
+
+                        </button>
+
+                        <button class="secondary-btn">
+
+                            <i class="fa-solid fa-folder-plus"></i>
+
+                            New Folder
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="storage-chart">
+
+                    <div class="circle-chart">
+
+                        <div class="circle-value">
+
+                            68%
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= STATISTICS ================= -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <h3>Images</h3>
+
+                    <h2>58</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-film"></i>
+
+                    <h3>Videos</h3>
+
+                    <h2>30</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <i class="fa-regular fa-file-pdf"></i>
+
+                    <h3>PDF</h3>
+
+                    <h2>18</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-music"></i>
+
+                    <h3>Audio</h3>
+
+                    <h2>14</h2>
+
+                </div>
+
+            </div>
+
+            <!-- ================= FILE TOOLBAR ================= -->
+
+            <div class="file-toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" placeholder="Search files...">
+
+                </div>
+
+                <div class="toolbar-right">
+
+                    <select>
+
+                        <option>All Files</option>
+                        <option>Image</option>
+                        <option>Video</option>
+                        <option>PDF</option>
+                        <option>Audio</option>
+
+                    </select>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-grip"></i>
+
+                    </button>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-list"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ================= FILE TABLE ================= -->
+
+            <div class="file-table">
+
+                <div class="table-header">
+
+                    <span>Name</span>
+                    <span>Type</span>
+                    <span>Resolution</span>
+                    <span>Size</span>
+                    <span>Created</span>
+                    <span>Action</span>
+
+                </div>
+
+                <!-- File -->
+
+                <div class="file-row">
+
+                    <div class="file-name">
+
+                        <img src="https://placehold.co/60x60/E5E7EB/111827?text=IMG">
+
+                        <div>
+
+                            <strong>LED Banner.jpg</strong>
+
+                            <small>Main Promotion</small>
+
+                        </div>
+
+                    </div>
+
+                    <span class="type image">
+
+                        Image
+
+                    </span>
+
+                    <span>
+
+                        1920 × 1080
+
+                    </span>
+
+                    <span>
+
+                        2.5 MB
+
+                    </span>
+
+                    <span>
+
+                        08 Jul 2026
+
+                    </span>
+
+                    <button class="more-btn">
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- File -->
+
+                <div class="file-row">
+
+                    <div class="file-name">
+
+                        <img src="https://placehold.co/60x60/DBEAFE/1D4ED8?text=MP4">
+
+                        <div>
+
+                            <strong>Promotion.mp4</strong>
+
+                            <small>Company Video</small>
+
+                        </div>
+
+                    </div>
+
+                    <span class="type video">
+
+                        Video
+
+                    </span>
+
+                    <span>
+
+                        1920 × 1080
+
+                    </span>
+
+                    <span>
+
+                        120 MB
+
+                    </span>
+
+                    <span>
+
+                        08 Jul 2026
+
+                    </span>
+
+                    <button class="more-btn">
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

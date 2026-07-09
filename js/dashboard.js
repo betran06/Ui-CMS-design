@@ -4,7 +4,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    normalizeSettingsMenu();
     initSidebarNavigation();
 
     initUserDropdown();
@@ -19,60 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==========================================
    SIDEBAR NAVIGATION
 ========================================== */
-
-function normalizeSettingsMenu() {
-
-    document.querySelectorAll(".sidebar .menu").forEach((menu) => {
-
-        const settingsItem = Array.from(menu.children).find((item) => {
-
-            return item.textContent.trim().toLowerCase() === "settings";
-
-        });
-
-        if (!settingsItem || settingsItem.classList.contains("has-submenu")) return;
-
-        settingsItem.className = settingsItem.className
-            .split(" ")
-            .filter((className) => className !== "active")
-            .join(" ");
-
-        settingsItem.classList.add("has-submenu");
-
-        settingsItem.innerHTML = `
-                <a href="#">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Settings</span>
-                    <i class="fa-solid fa-chevron-down submenu-arrow"></i>
-                </a>
-
-                <ul class="submenu">
-                    <li>
-                        <a href="user.html">
-                            <i class="fa-regular fa-user"></i>
-                            User
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="notifications.html">
-                            <i class="fa-regular fa-bell"></i>
-                            Notifications
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            <i class="fa-regular fa-circle-question"></i>
-                            About
-                        </a>
-                    </li>
-                </ul>
-        `;
-
-    });
-
-}
 
 function initSidebarNavigation() {
 

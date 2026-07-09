@@ -1,0 +1,592 @@
+/* ==================================================
+   SCREEN MODAL
+================================================== */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, .55);
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s;
+
+    z-index: 9999;
+
+}
+
+.modal-overlay.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* ==================================================
+   MODAL
+================================================== */
+
+.screen-modal {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    background: #fff;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .18);
+
+    animation: modalUp .35s ease;
+
+}
+
+@keyframes modalUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px) scale(.98);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.modal-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 28px 35px;
+
+    border-bottom: 1px solid #EEF2F7;
+
+}
+
+.modal-header h2 {
+
+    font-size: 28px;
+
+    color: #111827;
+
+    margin-bottom: 8px;
+
+}
+
+.modal-header p {
+
+    color: #6B7280;
+
+}
+
+.close-modal {
+
+    width: 44px;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #F3F4F6;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.close-modal:hover {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}
+
+
+/* ==================================================
+   STEPPER
+================================================== */
+
+.stepper {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 25px 35px;
+
+}
+
+.step {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.step-number {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: #E5E7EB;
+
+    color: #64748B;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: 700;
+
+}
+
+.step.active .step-number {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}
+
+.step span {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+.step-line {
+
+    width: 70px;
+
+    height: 2px;
+
+    background: #E5E7EB;
+
+}
+
+
+/* ==================================================
+   BODY
+================================================== */
+
+.modal-body {
+
+    padding: 35px;
+
+}
+
+.step-device,
+.step-virtual {
+
+    display: none;
+
+}
+
+.modal-body h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+}
+
+.modal-body p {
+
+    color: #6B7280;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ==================================================
+   SCREEN TYPE
+================================================== */
+
+.screen-type-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+.screen-type-card {
+
+    border: 2px solid #E5E7EB;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.screen-type-card:hover {
+
+    border-color: #2563EB;
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 35px rgba(37, 99, 235, .12);
+
+}
+
+.screen-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: auto auto 25px;
+
+    border-radius: 22px;
+
+    background: #EEF4FF;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 38px;
+
+    color: #2563EB;
+
+}
+
+.screen-type-card h3 {
+
+    margin-bottom: 12px;
+
+}
+
+.screen-type-card p {
+
+    margin: 0;
+
+}
+
+
+/* ==================================================
+   PAIR LAYOUT
+================================================== */
+
+.pair-layout {
+
+    display: grid;
+
+    grid-template-columns: 1fr 260px;
+
+    gap: 35px;
+
+    margin-bottom: 35px;
+
+}
+
+.pair-code {
+
+    height: 70px;
+
+    background: #F8FAFC;
+
+    border: 2px dashed #CBD5E1;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    letter-spacing: 6px;
+
+    margin: 15px 0 20px;
+
+}
+
+.qr-placeholder {
+
+    height: 230px;
+
+    border-radius: 20px;
+
+    border: 2px dashed #CBD5E1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #F8FAFC;
+
+    font-weight: 700;
+
+    color: #64748B;
+
+}
+
+
+/* ==================================================
+   DOWNLOAD
+================================================== */
+
+.download-player {
+
+    margin-top: 20px;
+
+}
+
+.download-player h4 {
+
+    margin-bottom: 20px;
+
+}
+
+.download-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+.download-grid button {
+
+    height: 55px;
+
+    border: 1px solid #E5E7EB;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.download-grid button:hover {
+
+    background: #2563EB;
+
+    color: #fff;
+
+}
+
+
+/* ==================================================
+   FORM
+================================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.form-group label {
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+}
+
+.form-group input,
+.form-group select {
+
+    height: 52px;
+
+    border: 1px solid #D1D5DB;
+
+    border-radius: 14px;
+
+    padding: 0 16px;
+
+    outline: none;
+
+}
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .1);
+
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.modal-footer {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    padding: 25px 35px;
+
+    border-top: 1px solid #EEF2F7;
+
+}
+
+.previous-btn,
+.pair-btn,
+.create-btn {
+
+    display: none;
+
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:768px) {
+
+    .screen-modal {
+
+        max-width: 100%;
+
+    }
+
+    .screen-type-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .pair-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .download-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+
+        padding: 22px;
+
+    }
+
+    .step span {
+
+        display: none;
+
+    }
+
+}

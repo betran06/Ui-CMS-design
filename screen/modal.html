@@ -1,0 +1,382 @@
+<!-- ===================================================
+     ADD SCREEN MODAL
+=================================================== -->
+
+<div class="modal-overlay" id="screenModal">
+
+    <div class="screen-modal">
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="modal-header">
+
+            <div>
+
+                <h2>Add New Screen</h2>
+
+                <p>Create a new screen for your organization.</p>
+
+            </div>
+
+            <button class="close-modal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <!-- ================= STEP ================= -->
+
+        <div class="stepper">
+
+            <div class="step active">
+
+                <div class="step-number">
+
+                    1
+
+                </div>
+
+                <span>
+
+                    Choose Type
+
+                </span>
+
+            </div>
+
+            <div class="step-line"></div>
+
+            <div class="step">
+
+                <div class="step-number">
+
+                    2
+
+                </div>
+
+                <span>
+
+                    Configuration
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+                            STEP 1
+        ====================================================== -->
+
+        <div class="modal-body step-one">
+
+            <h3>
+
+                Select Screen Type
+
+            </h3>
+
+            <p>
+
+                Choose how you want to create your screen.
+
+            </p>
+
+            <div class="screen-type-grid">
+
+                <!-- DEVICE -->
+
+                <div class="screen-type-card device-card">
+
+                    <div class="screen-icon">
+
+                        <i class="fa-solid fa-tv"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Device Screen
+
+                    </h3>
+
+                    <p>
+
+                        Pair a physical player such as Android,
+                        Windows, Samsung or LG.
+
+                    </p>
+
+                </div>
+
+                <!-- VIRTUAL -->
+
+                <div class="screen-type-card virtual-card">
+
+                    <div class="screen-icon">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Virtual Screen
+
+                    </h3>
+
+                    <p>
+
+                        Display web content directly
+                        inside your browser.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+                        STEP 2 DEVICE
+        ====================================================== -->
+
+        <div class="modal-body step-device">
+
+            <h3>
+
+                Pair Device Screen
+
+            </h3>
+
+            <p>
+
+                Install SignPlus Player on your device
+                and enter the pairing code.
+
+            </p>
+
+            <div class="pair-layout">
+
+                <div class="pair-left">
+
+                    <label>
+
+                        Pairing Code
+
+                    </label>
+
+                    <div class="pair-code">
+
+                        837-294
+
+                    </div>
+
+                    <button class="outline-btn">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                        Copy Code
+
+                    </button>
+
+                </div>
+
+                <div class="pair-right">
+
+                    <div class="qr-placeholder">
+
+                        QR CODE
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="download-player">
+
+                <h4>
+
+                    Download SignPlus Player
+
+                </h4>
+
+                <div class="download-grid">
+
+                    <button>
+
+                        <i class="fa-brands fa-android"></i>
+
+                        Android
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-brands fa-windows"></i>
+
+                        Windows
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-solid fa-tv"></i>
+
+                        Samsung
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-solid fa-display"></i>
+
+                        LG webOS
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+                        STEP 2 VIRTUAL
+        ====================================================== -->
+
+        <div class="modal-body step-virtual">
+
+            <h3>
+
+                Create Virtual Screen
+
+            </h3>
+
+            <p>
+
+                Configure a browser-based screen.
+
+            </p>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Screen Name
+
+                    </label>
+
+                    <input type="text" placeholder="Marketing Website">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Website URL
+
+                    </label>
+
+                    <input type="url" placeholder="https://">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Resolution
+
+                    </label>
+
+                    <select>
+
+                        <option>
+
+                            1920 x 1080
+
+                        </option>
+
+                        <option>
+
+                            3840 x 2160
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Orientation
+
+                    </label>
+
+                    <select>
+
+                        <option>
+
+                            Landscape
+
+                        </option>
+
+                        <option>
+
+                            Portrait
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+
+        <div class="modal-footer">
+
+            <button class="outline-btn previous-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Previous
+
+            </button>
+
+            <button class="secondary-btn close-btn">
+
+                Close
+
+            </button>
+
+            <button class="primary-btn pair-btn">
+
+                Pair My Screen
+
+            </button>
+
+            <button class="primary-btn create-btn">
+
+                Create Virtual Screen
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

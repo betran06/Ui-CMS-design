@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="content/add-content-modal.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -20,6 +22,8 @@
 </head>
 
 <body>
+
+    <div id="contentModalContainer"></div>
 
     <!-- ================= Sidebar ================= -->
 
@@ -200,7 +204,7 @@
 
                     </button>
 
-                    <button class="secondary-btn">
+                    <button class="secondary-btn" id="openAddContentModal">
 
                         <i class="fa-solid fa-upload"></i>
 
@@ -356,6 +360,7 @@
 
     <script src="js/dashboard.js"></script>
     <script src="js/content.js"></script>
+    <script src="content/add-content-modal.js"></script>
 
 </body>
 

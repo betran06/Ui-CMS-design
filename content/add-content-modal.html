@@ -1,0 +1,226 @@
+<!-- =====================================================
+    ADD CONTENT MODAL
+====================================================== -->
+
+<div class="modal-overlay" id="addContentModal">
+
+    <div class="content-modal">
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="content-modal-header">
+
+            <h2>
+
+                Add Content
+
+            </h2>
+
+            <button class="close-content-modal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <!-- ================= TAB ================= -->
+
+        <div class="content-tabs">
+
+            <button class="tab-btn active" data-tab="upload">
+
+                MY DEVICE
+
+            </button>
+
+            <button class="tab-btn" data-tab="html">
+
+                WEB (HTML)
+
+            </button>
+
+            <button class="tab-btn" data-tab="url">
+
+                WEB (URL)
+
+            </button>
+
+            <button class="tab-btn" data-tab="ticker">
+
+                TICKER
+
+            </button>
+
+        </div>
+
+        <!-- =====================================================
+            MY DEVICE
+        ====================================================== -->
+
+        <div class="tab-content active" id="upload">
+
+            <div class="upload-wrapper">
+
+                <div class="upload-illustration">
+
+                    <img src="https://placehold.co/280x180?text=Upload+Content">
+
+                </div>
+
+                <h3>
+
+                    Drop your files here
+
+                </h3>
+
+                <p>
+
+                    Drag & drop images, videos or documents
+                    into this area.
+
+                </p>
+
+                <input type="file" id="contentFile" hidden multiple>
+
+                <button class="primary-btn" id="browseFile">
+
+                    <i class="fa-solid fa-folder-open"></i>
+
+                    Open
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+            WEB HTML
+        ====================================================== -->
+
+        <div class="tab-content" id="html">
+
+            <div class="form-area">
+
+                <div class="form-group">
+
+                    <label>
+
+                        HTML Title
+
+                    </label>
+
+                    <input type="text" placeholder="Landing Page">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        HTML Source
+
+                    </label>
+
+                    <textarea rows="12" placeholder="Paste HTML here..."></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+            WEB URL
+        ====================================================== -->
+
+        <div class="tab-content" id="url">
+
+            <div class="form-area">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Website URL
+
+                    </label>
+
+                    <input type="url" placeholder="https://example.com">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Refresh Interval
+
+                    </label>
+
+                    <select>
+
+                        <option>Never</option>
+
+                        <option>5 Minutes</option>
+
+                        <option>10 Minutes</option>
+
+                        <option>30 Minutes</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+            TICKER
+        ====================================================== -->
+
+        <div class="tab-content" id="ticker">
+
+            <div class="form-area">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Running Text
+
+                    </label>
+
+                    <textarea rows="10" placeholder="Enter ticker message..."></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+
+        <div class="content-modal-footer">
+
+            <button class="secondary-btn close-content">
+
+                Close
+
+            </button>
+
+            <button class="primary-btn save-content">
+
+                <i class="fa-solid fa-check"></i>
+
+                Save Content
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

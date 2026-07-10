@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="screen/modal.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -18,7 +19,10 @@
 
 </head>
 
+
 <body>
+    <!-- Modal -->
+    <div id="modalContainer"></div>
 
     <!-- ================= Sidebar ================= -->
 
@@ -143,9 +147,12 @@
 
             <div class="toolbar">
                 <div class="toolbar-left">
-                    <button class="primary-btn">
+                    <button class="primary-btn" id="openScreenModal">
+
                         <i class="fa-solid fa-plus"></i>
+
                         Add Screen
+
                     </button>
                     <button class="secondary-btn">
                         <i class="fa-solid fa-table-cells-large"></i>
@@ -287,6 +294,8 @@
 
     <script src="js/dashboard.js"></script>
     <script src="js/screen.js"></script>
+    <script src="screen/modal.js"></script>
+
 
 </body>
 

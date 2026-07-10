@@ -129,7 +129,7 @@ function initButtons() {
 
     const wallBtn = document.querySelector(".secondary-btn");
 
-    if (addBtn) {
+    if (addBtn && addBtn.id !== "openScreenModal") {
 
         addBtn.addEventListener("click", () => {
 

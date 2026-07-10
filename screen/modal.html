@@ -1,6 +1,6 @@
-<!-- ===================================================
-     ADD SCREEN MODAL
-=================================================== -->
+<!-- =====================================================
+    ADD SCREEN MODAL
+====================================================== -->
 
 <div class="modal-overlay" id="screenModal">
 
@@ -26,73 +26,37 @@
 
         </div>
 
-        <!-- ================= STEP ================= -->
-
-        <div class="stepper">
-
-            <div class="step active">
-
-                <div class="step-number">
-
-                    1
-
-                </div>
-
-                <span>
-
-                    Choose Type
-
-                </span>
-
-            </div>
-
-            <div class="step-line"></div>
-
-            <div class="step">
-
-                <div class="step-number">
-
-                    2
-
-                </div>
-
-                <span>
-
-                    Configuration
-
-                </span>
-
-            </div>
-
-        </div>
-
         <!-- =====================================================
                             STEP 1
         ====================================================== -->
 
-        <div class="modal-body step-one">
+        <div class="modal-content step-one active">
 
-            <h3>
+            <div class="modal-title">
 
-                Select Screen Type
+                <h3>
 
-            </h3>
+                    Choose Screen Type
 
-            <p>
+                </h3>
 
-                Choose how you want to create your screen.
+                <p>
 
-            </p>
+                    Select how you would like to create a screen.
+
+                </p>
+
+            </div>
 
             <div class="screen-type-grid">
 
                 <!-- DEVICE -->
 
-                <div class="screen-type-card device-card">
+                <div class="screen-card device-card">
 
-                    <div class="screen-icon">
+                    <div class="screen-image">
 
-                        <i class="fa-solid fa-tv"></i>
+                        <img src="https://placehold.co/320x220?text=TV+Screen">
 
                     </div>
 
@@ -104,8 +68,8 @@
 
                     <p>
 
-                        Pair a physical player such as Android,
-                        Windows, Samsung or LG.
+                        Pair your Android TV, Windows Player,
+                        Samsung Tizen or LG webOS player.
 
                     </p>
 
@@ -113,11 +77,11 @@
 
                 <!-- VIRTUAL -->
 
-                <div class="screen-type-card virtual-card">
+                <div class="screen-card virtual-card">
 
-                    <div class="screen-icon">
+                    <div class="screen-image">
 
-                        <i class="fa-solid fa-globe"></i>
+                        <img src="https://placehold.co/320x220?text=Browser">
 
                     </div>
 
@@ -129,8 +93,8 @@
 
                     <p>
 
-                        Display web content directly
-                        inside your browser.
+                        Display your website directly
+                        inside a browser.
 
                     </p>
 
@@ -144,102 +108,53 @@
                         STEP 2 DEVICE
         ====================================================== -->
 
-        <div class="modal-body step-device">
+        <div class="modal-content step-device">
 
-            <h3>
+            <div class="modal-title">
 
-                Pair Device Screen
+                <h3>
 
-            </h3>
+                    Pair Device Screen
 
-            <p>
+                </h3>
 
-                Install SignPlus Player on your device
-                and enter the pairing code.
+                <p>
 
-            </p>
+                    Follow these simple steps to pair your device.
 
-            <div class="pair-layout">
+                </p>
 
-                <div class="pair-left">
+            </div>
 
-                    <label>
+            <div class="device-slider">
 
-                        Pairing Code
+                <div class="device-slide active">
 
-                    </label>
-
-                    <div class="pair-code">
-
-                        837-294
-
-                    </div>
-
-                    <button class="outline-btn">
-
-                        <i class="fa-regular fa-copy"></i>
-
-                        Copy Code
-
-                    </button>
+                    <img src="https://placehold.co/720x360?text=Download+SignPlus+Player">
 
                 </div>
 
-                <div class="pair-right">
+                <div class="device-slide">
 
-                    <div class="qr-placeholder">
+                    <img src="https://placehold.co/720x360?text=Open+Player">
 
-                        QR CODE
+                </div>
 
-                    </div>
+                <div class="device-slide">
+
+                    <img src="https://placehold.co/720x360?text=Ready+to+Pair">
 
                 </div>
 
             </div>
 
-            <div class="download-player">
+            <div class="slider-dots">
 
-                <h4>
+                <span class="dot active"></span>
 
-                    Download SignPlus Player
+                <span class="dot"></span>
 
-                </h4>
-
-                <div class="download-grid">
-
-                    <button>
-
-                        <i class="fa-brands fa-android"></i>
-
-                        Android
-
-                    </button>
-
-                    <button>
-
-                        <i class="fa-brands fa-windows"></i>
-
-                        Windows
-
-                    </button>
-
-                    <button>
-
-                        <i class="fa-solid fa-tv"></i>
-
-                        Samsung
-
-                    </button>
-
-                    <button>
-
-                        <i class="fa-solid fa-display"></i>
-
-                        LG webOS
-
-                    </button>
-
-                </div>
+                <span class="dot"></span>
 
             </div>
 
@@ -249,95 +164,119 @@
                         STEP 2 VIRTUAL
         ====================================================== -->
 
-        <div class="modal-body step-virtual">
+        <div class="modal-content step-virtual">
 
-            <h3>
+            <div class="modal-title">
 
-                Create Virtual Screen
+                <h3>
 
-            </h3>
+                    Virtual Screen
 
-            <p>
+                </h3>
 
-                Configure a browser-based screen.
+                <p>
 
-            </p>
+                    Create a browser-based screen for your content.
 
-            <div class="form-grid">
+                </p>
 
-                <div class="form-group">
+            </div>
 
-                    <label>
+            <div class="virtual-preview">
 
-                        Screen Name
+                <img src="https://placehold.co/720x360?text=Virtual+Screen">
 
-                    </label>
+            </div>
 
-                    <input type="text" placeholder="Marketing Website">
+        </div>
+
+        <!-- =====================================================
+                    STEP 3 DEVICE PAIR
+        ===================================================== -->
+
+        <div class="modal-content step-pair">
+
+            <div class="modal-title">
+
+                <h3>
+
+                    Pair Your Device
+
+                </h3>
+
+                <p>
+
+                    Enter your license key to pair and register your new screen.
+
+                </p>
+
+            </div>
+
+            <div class="pair-container">
+
+                <!-- LEFT -->
+
+                <div class="pair-left">
+
+                    <div class="license-badge">
+
+                        0 / 3 Licenses Available
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="licenseCode">
+
+                            License Key / Pairing Code
+
+                        </label>
+
+                        <input type="text" id="licenseCode" placeholder="e.g., 837-294">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="screenName">
+
+                            Screen Name
+
+                        </label>
+
+                        <input type="text" id="screenName" placeholder="e.g., Lobby LED Screen">
+
+                    </div>
 
                 </div>
 
-                <div class="form-group">
+                <!-- RIGHT -->
 
-                    <label>
+                <div class="pair-right">
 
-                        Website URL
+                    <div class="form-group">
 
-                    </label>
+                        <label for="screenMemo">
 
-                    <input type="url" placeholder="https://">
+                            Memo
 
-                </div>
+                        </label>
 
-                <div class="form-group">
+                        <textarea id="screenMemo" rows="4" placeholder="Enter memo or notes..."></textarea>
 
-                    <label>
+                    </div>
 
-                        Resolution
+                    <div class="form-group">
 
-                    </label>
+                        <label for="screenTags">
 
-                    <select>
+                            Tags
 
-                        <option>
+                        </label>
 
-                            1920 x 1080
+                        <input type="text" id="screenTags" placeholder="Add tags (comma separated)">
 
-                        </option>
-
-                        <option>
-
-                            3840 x 2160
-
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>
-
-                        Orientation
-
-                    </label>
-
-                    <select>
-
-                        <option>
-
-                            Landscape
-
-                        </option>
-
-                        <option>
-
-                            Portrait
-
-                        </option>
-
-                    </select>
+                    </div>
 
                 </div>
 
@@ -350,29 +289,23 @@
         <div class="modal-footer">
 
             <button class="outline-btn previous-btn">
-
-                <i class="fa-solid fa-arrow-left"></i>
-
                 Previous
-
             </button>
 
             <button class="secondary-btn close-btn">
-
                 Close
+            </button>
 
+            <button class="secondary-btn cancel-btn">
+                Cancel
             </button>
 
             <button class="primary-btn pair-btn">
-
                 Pair My Screen
-
             </button>
 
-            <button class="primary-btn create-btn">
-
-                Create Virtual Screen
-
+            <button class="primary-btn pair-now-btn">
+                Pair Now
             </button>
 
         </div>

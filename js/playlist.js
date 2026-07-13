@@ -158,7 +158,7 @@ function initButtons() {
 
         create.addEventListener("click", () => {
 
-            showToast("Open New Playlist");
+            window.location.href = "playlist/new-playlist.html";
 
         });
 
@@ -197,7 +197,17 @@ document.querySelectorAll(".outline-btn")
 
         button.addEventListener("click", () => {
 
-            showToast(button.innerText.trim());
+            const action = button.innerText.trim();
+
+            if (action === "Edit") {
+
+                window.location.href = "playlist/new-playlist.html";
+
+            } else {
+
+                showToast(action);
+
+            }
 
         });
 

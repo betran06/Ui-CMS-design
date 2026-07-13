@@ -1,0 +1,1503 @@
+/* =====================================================
+   SIGNPLUS CMS
+   NEW PLAYLIST
+===================================================== */
+
+.new-playlist-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.page-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.back-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, .06);
+
+}
+
+.back-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.page-title h1 {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-top: 4px;
+
+}
+
+.breadcrumb {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+}
+
+.edit-btn {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.edit-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.page-action {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   PLAYLIST LAYOUT
+===================================================== */
+
+.playlist-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 340px;
+
+    gap: 24px;
+
+    align-items: start;
+
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.playlist-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.playlist-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 24px;
+
+    background: #FFFFFF;
+
+    border-radius: 20px;
+
+    border: 1px solid #EEF2F7;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+.duration {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.duration span {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    margin-bottom: 4px;
+
+}
+
+.duration strong {
+
+    font-size: 26px;
+
+    color: #111827;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.primary-btn,
+
+.outline-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    height: 46px;
+
+    padding: 0 20px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+.icon-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 12px;
+
+}
+
+
+/* =====================================================
+   PLAYLIST CANVAS
+===================================================== */
+
+.playlist-canvas {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 24px;
+
+    min-height: 650px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+/* =====================================================
+   PLAYLIST EMPTY
+===================================================== */
+
+.playlist-empty {
+
+    height: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+.playlist-empty img {
+
+    width: 180px;
+
+    margin-bottom: 30px;
+
+    opacity: .9;
+
+}
+
+.playlist-empty h3 {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 14px;
+
+}
+
+.playlist-empty p {
+
+    max-width: 420px;
+
+    color: #64748B;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+}
+
+.playlist-empty strong {
+
+    color: #2563EB;
+
+}
+
+
+/* =====================================================
+   PLAYLIST ITEMS
+===================================================== */
+
+.playlist-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding: 24px;
+
+}
+
+
+/* =====================================================
+   PLAYLIST CARD
+===================================================== */
+
+.playlist-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 18px;
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.playlist-item:hover {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, .08);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =====================================================
+   THUMBNAIL
+===================================================== */
+
+.playlist-thumb {
+
+    width: 120px;
+
+    height: 70px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    background: #F8FAFC;
+
+}
+
+.playlist-thumb img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.playlist-info {
+
+    flex: 1;
+
+}
+
+.playlist-info h4 {
+
+    font-size: 17px;
+
+    color: #111827;
+
+    margin-bottom: 8px;
+
+}
+
+.playlist-info p {
+
+    color: #64748B;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+}
+
+.content-type {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 6px 12px;
+
+    border-radius: 30px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   DURATION
+===================================================== */
+
+.playlist-duration {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+}
+
+.playlist-duration span {
+
+    padding: 6px 12px;
+
+    border-radius: 30px;
+
+    background: #F1F5F9;
+
+    font-size: 13px;
+
+    color: #475569;
+
+}
+
+.playlist-duration strong {
+
+    color: #111827;
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.playlist-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.playlist-actions button {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #F8FAFC;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.playlist-actions button:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   DROP ZONE
+===================================================== */
+
+.drop-zone {
+
+    margin: 24px;
+
+    padding: 40px;
+
+    border: 2px dashed #CBD5E1;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: .3s;
+
+    background: #FAFBFC;
+
+}
+
+.drop-zone:hover {
+
+    border-color: #2563EB;
+
+    background: #F5F9FF;
+
+}
+
+.drop-zone i {
+
+    font-size: 40px;
+
+    color: #2563EB;
+
+    margin-bottom: 16px;
+
+}
+
+.drop-zone h4 {
+
+    font-size: 20px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+
+}
+
+.drop-zone p {
+
+    color: #64748B;
+
+}
+
+
+/* =====================================================
+   TOTAL CONTENT
+===================================================== */
+
+.total-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 24px;
+
+    border-top: 1px solid #EEF2F7;
+
+    background: #FAFBFC;
+
+}
+
+.total-content span {
+
+    color: #64748B;
+
+    font-size: 14px;
+
+}
+
+.total-content strong {
+
+    font-size: 16px;
+
+    color: #111827;
+
+}
+
+
+/* =====================================================
+   FLOATING ADD BUTTON
+===================================================== */
+
+.floating-add {
+
+    position: absolute;
+
+    right: 24px;
+
+    bottom: 24px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    box-shadow: 0 18px 35px rgba(37, 99, 235, .25);
+
+    transition: .3s;
+
+}
+
+.floating-add:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* =====================================================
+   PLAYLIST SIDEBAR
+===================================================== */
+
+.playlist-sidebar {
+
+    position: sticky;
+
+    top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+/* =====================================================
+   SIDEBAR CARD
+===================================================== */
+
+.sidebar-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+.sidebar-card h3 {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.info-group {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #F1F5F9;
+
+}
+
+.info-group:last-child {
+
+    border-bottom: none;
+
+}
+
+.info-group label {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    font-weight: 500;
+
+}
+
+.info-group p {
+
+    font-size: 14px;
+
+    color: #111827;
+
+    font-weight: 600;
+
+}
+
+.badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   TAG BUTTON
+===================================================== */
+
+.sidebar-card .outline-btn {
+
+    width: 100%;
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.sidebar-card textarea {
+
+    width: 100%;
+
+    min-height: 140px;
+
+    border: 1px solid #DCE3ED;
+
+    border-radius: 14px;
+
+    padding: 16px;
+
+    resize: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: .25s;
+
+    background: #FFFFFF;
+
+}
+
+.sidebar-card textarea:focus {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .08);
+
+}
+
+
+/* =====================================================
+   SWITCH
+===================================================== */
+
+.switch {
+
+    position: relative;
+
+    width: 52px;
+
+    height: 30px;
+
+}
+
+.switch input {
+
+    display: none;
+
+}
+
+.slider {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 999px;
+
+    background: #CBD5E1;
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.slider::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+
+    height: 22px;
+
+    background: #FFFFFF;
+
+    border-radius: 50%;
+
+    top: 4px;
+
+    left: 4px;
+
+    transition: .25s;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+
+}
+
+.switch input:checked+.slider {
+
+    background: #2563EB;
+
+}
+
+.switch input:checked+.slider::before {
+
+    transform: translateX(22px);
+
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.playlist-canvas::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.playlist-canvas::-webkit-scrollbar-thumb {
+
+    background: #CBD5E1;
+
+    border-radius: 20px;
+
+}
+
+.playlist-canvas::-webkit-scrollbar-thumb:hover {
+
+    background: #94A3B8;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1400px) {
+
+    .playlist-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .playlist-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+}
+
+
+@media(max-width:992px) {
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        width: 100%;
+
+    }
+
+    .page-action button {
+
+        flex: 1;
+
+    }
+
+    .playlist-toolbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+    .playlist-toolbar .primary-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .playlist-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .playlist-thumb {
+
+        width: 100%;
+
+        height: 180px;
+
+    }
+
+    .playlist-duration {
+
+        width: 100%;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .playlist-actions {
+
+        width: 100%;
+
+        justify-content: flex-end;
+
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .page-title {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        flex-direction: column;
+
+    }
+
+    .page-action button {
+
+        width: 100%;
+
+    }
+
+    .playlist-empty img {
+
+        width: 120px;
+
+    }
+
+    .playlist-empty h3 {
+
+        font-size: 24px;
+
+    }
+
+}
+
+/* =====================================================
+   PLAYLIST SIDEBAR
+===================================================== */
+
+.playlist-sidebar {
+
+    position: sticky;
+
+    top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+/* =====================================================
+   SIDEBAR CARD
+===================================================== */
+
+.sidebar-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+.sidebar-card h3 {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.info-group {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #F1F5F9;
+
+}
+
+.info-group:last-child {
+
+    border-bottom: none;
+
+}
+
+.info-group label {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    font-weight: 500;
+
+}
+
+.info-group p {
+
+    font-size: 14px;
+
+    color: #111827;
+
+    font-weight: 600;
+
+}
+
+.badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   TAG BUTTON
+===================================================== */
+
+.sidebar-card .outline-btn {
+
+    width: 100%;
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.sidebar-card textarea {
+
+    width: 100%;
+
+    min-height: 140px;
+
+    border: 1px solid #DCE3ED;
+
+    border-radius: 14px;
+
+    padding: 16px;
+
+    resize: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: .25s;
+
+    background: #FFFFFF;
+
+}
+
+.sidebar-card textarea:focus {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .08);
+
+}
+
+
+/* =====================================================
+   SWITCH
+===================================================== */
+
+.switch {
+
+    position: relative;
+
+    width: 52px;
+
+    height: 30px;
+
+}
+
+.switch input {
+
+    display: none;
+
+}
+
+.slider {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 999px;
+
+    background: #CBD5E1;
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.slider::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+
+    height: 22px;
+
+    background: #FFFFFF;
+
+    border-radius: 50%;
+
+    top: 4px;
+
+    left: 4px;
+
+    transition: .25s;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+
+}
+
+.switch input:checked+.slider {
+
+    background: #2563EB;
+
+}
+
+.switch input:checked+.slider::before {
+
+    transform: translateX(22px);
+
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.playlist-canvas::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.playlist-canvas::-webkit-scrollbar-thumb {
+
+    background: #CBD5E1;
+
+    border-radius: 20px;
+
+}
+
+.playlist-canvas::-webkit-scrollbar-thumb:hover {
+
+    background: #94A3B8;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1400px) {
+
+    .playlist-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .playlist-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+}
+
+
+@media(max-width:992px) {
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        width: 100%;
+
+    }
+
+    .page-action button {
+
+        flex: 1;
+
+    }
+
+    .playlist-toolbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+    .playlist-toolbar .primary-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .playlist-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .playlist-thumb {
+
+        width: 100%;
+
+        height: 180px;
+
+    }
+
+    .playlist-duration {
+
+        width: 100%;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .playlist-actions {
+
+        width: 100%;
+
+        justify-content: flex-end;
+
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .page-title {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        flex-direction: column;
+
+    }
+
+    .page-action button {
+
+        width: 100%;
+
+    }
+
+    .playlist-empty img {
+
+        width: 120px;
+
+    }
+
+    .playlist-empty h3 {
+
+        font-size: 24px;
+
+    }
+
+}

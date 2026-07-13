@@ -196,7 +196,15 @@ document.querySelectorAll(".outline-btn")
 
             const action = button.innerText.trim();
 
-            showToast(action);
+            if (action === "Edit") {
+
+                window.location.href = "scedule/new-scedule.html";
+
+            } else {
+
+                showToast(action);
+
+            }
 
         });
 
@@ -325,3 +333,19 @@ setTimeout(() => {
     showToast("Schedule Manager Loaded");
 
 }, 800);
+
+/* ==========================================
+   NEW SCHEDULE
+========================================== */
+
+const newScheduleBtn = document.getElementById("newScheduleBtn");
+
+if (newScheduleBtn) {
+
+    newScheduleBtn.addEventListener("click", () => {
+
+        window.location.href = "schedule/new-schedule.html";
+
+    });
+
+}

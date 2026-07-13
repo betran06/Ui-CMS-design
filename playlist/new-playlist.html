@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Playlist - SignPlus CMS</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="new-playlist.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/screen.css">
+
+    <link rel="stylesheet" href="../content/add-content-modal.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+    <!-- =========================
+        SIDEBAR
+    ========================= -->
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-display"></i>
+            <span>SignPlus CMS</span>
+        </div>
+
+        <ul class="menu">
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-desktop"></i>
+                Screen
+            </li>
+
+            <li>
+                <i class="fa-solid fa-photo-film"></i>
+                Content
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-list"></i>
+                Playlist
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Storage
+            </li>
+
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                Device
+            </li>
+
+            <!-- <li>
+                <i class="fa-brands fa-android"></i>
+                App
+            </li> -->
+
+            <li class="has-submenu">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                    <i class="fa-solid fa-chevron-down submenu-arrow"></i>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="user.html">
+                            <i class="fa-regular fa-user"></i>
+                            User
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-regular fa-circle-question"></i>
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </aside>
+
+    <main class="main">
+        <!-- ================= Topbar ================= -->
+        <header class="topbar">
+            <div class="logo-text">
+                New Playlist
+            </div>
+
+            <div class="topbar-right">
+                <div class="notification">
+                    <button id="notificationBtn">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <div class="notification-menu">
+                        <h4>Notifications</h4>
+
+                        <div class="notify-item">
+                            Screen Lobby Online
+                        </div>
+
+                        <div class="notify-item">
+                            New Playlist Published
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <button id="userBtn">
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="user-menu">
+                        <div class="user-info">
+                            <strong>Betran Arya</strong>
+                            <small>betran@email.com</small>
+                        </div>
+                        <hr>
+
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- =========================
+            CONTENT
+        ========================= -->
+
+        <section class="content new-playlist-page">
+            <div class="page-header">
+                <div class="page-title">
+                    <button class="back-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </button>
+
+                    <div>
+
+                        <span class="breadcrumb">
+
+                            Playlist /
+                            <strong>New Playlist</strong>
+
+                        </span>
+
+                        <h1 id="playlistName">
+
+                            Playlist New Years
+
+                        </h1>
+                    </div>
+
+                    <button class="edit-btn">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                </div>
+
+
+                <div class="page-action">
+                    <button class="outline-btn">
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </button>
+
+                    <button class="primary-btn">
+
+                        Save Playlist
+
+                    </button>
+
+                    <button class="icon-btn">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+                </div>
+            </div>
+
+            <div class="playlist-wrapper">
+                <!-- LEFT -->
+                <section class="playlist-content">
+                    <div class="playlist-toolbar">
+                        <div class="duration">
+
+                            <span>Total Duration</span>
+
+                            <strong>
+
+                                00:00:00
+
+                            </strong>
+
+                        </div>
+
+                        <button class="primary-btn" id="openAddContentModal">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            Add Content
+
+                        </button>
+                    </div>
+
+                    <!-- EMPTY PLAYLIST -->
+
+                    <div class="playlist-canvas">
+
+                        <div class="playlist-empty">
+
+                            <img src="https://placehold.co/180x180?text=Playlist" alt="Playlist">
+
+                            <h3>
+
+                                Playlist is Empty
+
+                            </h3>
+
+                            <p>
+
+                                Click <strong>Add Content</strong>
+
+                                to start building your playlist.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- RIGHT -->
+                <aside class="playlist-sidebar">
+                    <div class="sidebar-card">
+                        <h3>
+
+                            Playlist Information
+
+                        </h3>
+
+                        <div class="info-group">
+
+                            <label>
+
+                                Playlist Type
+
+                            </label>
+
+                            <span class="badge">
+
+                                General
+
+                            </span>
+
+                        </div>
+
+                        <div class="info-group">
+
+                            <label>
+
+                                Created By
+
+                            </label>
+
+                            <p>
+
+                                opet arya
+
+                            </p>
+
+                        </div>
+
+                        <div class="info-group">
+
+                            <label>
+
+                                Updated By
+
+                            </label>
+
+                            <p>
+
+                                opet arya
+
+                            </p>
+
+                        </div>
+
+                        <div class="info-group">
+
+                            <label>
+
+                                Date Created
+
+                            </label>
+
+                            <p>
+
+                                10 Jul 2026
+
+                            </p>
+
+                        </div>
+
+                        <div class="info-group">
+
+                            <label>
+
+                                Last Updated
+
+                            </label>
+
+                            <p>
+
+                                10 Jul 2026
+
+                            </p>
+
+                        </div>
+
+                        <div class="info-group">
+
+                            <label>
+
+                                Weighted Shuffle
+
+                            </label>
+
+                            <label class="switch">
+
+                                <input type="checkbox">
+
+                                <span class="slider"></span>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- TAG -->
+
+                    <div class="sidebar-card">
+                        <h3>
+
+                            Tags
+
+                        </h3>
+
+                        <button class="outline-btn">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            Add Tag
+
+                        </button>
+                    </div>
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="sidebar-card">
+                        <h3>
+
+                            Description
+
+                        </h3>
+
+                        <textarea placeholder="Write description..."></textarea>
+                    </div>
+
+                </aside>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- =====================================================
+        TOP NAVBAR
+    ====================================================== -->
+
+
+    <div id="contentModalContainer"></div>
+    <script src="../js/dashboard.js"></script>
+    <script src="new-playlist.js"></script>
+    <script src="../content/add-content-modal.js"></script>
+
+</body>
+
+</html>

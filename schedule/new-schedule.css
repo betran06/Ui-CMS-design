@@ -1,0 +1,1415 @@
+/* =====================================================
+   SIGNPLUS CMS
+   NEW SCHEDULE
+===================================================== */
+
+.new-schedule-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.page-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.back-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, .06);
+
+}
+
+.back-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.page-title h1 {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-top: 4px;
+
+}
+
+.breadcrumb {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+}
+
+.edit-btn {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.edit-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.page-action {
+
+    display: flex;
+
+    gap: 14px;
+
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.builder-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 24px;
+
+    background: #FFFFFF;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .05);
+
+}
+
+.toolbar-left {
+
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+.schedule-chip {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: #F8FAFC;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border: 1px solid #E2E8F0;
+
+}
+
+.schedule-chip i {
+
+    color: #2563EB;
+
+}
+
+.toolbar-right {
+
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.schedule-layout {
+
+    display: grid;
+
+    grid-template-columns: 1fr 360px;
+
+    gap: 24px;
+
+    align-items: start;
+
+}
+
+
+/* =====================================================
+   CALENDAR PANEL
+===================================================== */
+
+.calendar-panel {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .05);
+
+    border: 1px solid #EEF2F7;
+
+}
+
+
+/* =====================================================
+   CALENDAR TOOLBAR
+===================================================== */
+
+.calendar-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid #EEF2F7;
+
+}
+
+.calendar-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+.calendar-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.calendar-title h2 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+}
+
+.calendar-title span {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    margin-top: 2px;
+
+}
+
+.calendar-nav {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #F8FAFC;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.calendar-nav:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.calendar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.today-btn {
+
+    padding: 0 18px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+.view-btn {
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #F8FAFC;
+
+    cursor: pointer;
+
+    color: #475569;
+
+    transition: .25s;
+
+}
+
+.view-btn.active {
+
+    background: #111827;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   CALENDAR BODY
+===================================================== */
+
+.calendar-body {
+
+    height: 720px;
+
+    overflow: auto;
+
+    position: relative;
+
+}
+
+/* =====================================================
+   DAY HEADER
+===================================================== */
+
+.calendar-days {
+
+    display: grid;
+
+    grid-template-columns: 80px repeat(7, 1fr);
+
+    background: #FFFFFF;
+
+    border-top: 1px solid #EEF2F7;
+
+    border-bottom: 1px solid #EEF2F7;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 20;
+
+}
+
+.time-head {
+
+    height: 70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #94A3B8;
+
+    border-right: 1px solid #EEF2F7;
+
+}
+
+.day-card {
+
+    height: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-right: 1px solid #EEF2F7;
+
+    transition: .3s;
+
+}
+
+.day-card span {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+}
+
+.day-card strong {
+
+    font-size: 22px;
+
+    margin-top: 4px;
+
+    color: #111827;
+
+}
+
+.day-card.active {
+
+    background: #EFF6FF;
+
+}
+
+.day-card.active strong {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* =====================================================
+   CALENDAR BODY
+===================================================== */
+
+.calendar-body {
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    min-height: 1440px;
+
+}
+
+
+/* =====================================================
+   TIME COLUMN
+===================================================== */
+
+.time-column {
+
+    border-right: 1px solid #EEF2F7;
+
+    background: #FFFFFF;
+
+}
+
+.time-column span {
+
+    display: block;
+
+    height: 60px;
+
+    padding-top: 6px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #94A3B8;
+
+    border-bottom: 1px solid #F1F5F9;
+
+}
+
+
+/* =====================================================
+   WEEK GRID
+===================================================== */
+
+.week-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+.week-column {
+
+    position: relative;
+
+    border-right: 1px solid #F1F5F9;
+
+    background-image:
+        repeating-linear-gradient(to bottom,
+
+            transparent,
+
+            transparent 59px,
+
+            #EEF2F7 60px);
+
+    min-height: 1440px;
+
+    transition: .25s;
+
+}
+
+.week-column:hover {
+
+    background-color: #F8FAFC;
+
+}
+
+.week-column.active {
+
+    background-color: #FAFCFF;
+
+}
+
+
+/* =====================================================
+   CURRENT TIME
+===================================================== */
+
+.week-column.active::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    top: 520px;
+
+    height: 2px;
+
+    background: #EF4444;
+
+    z-index: 2;
+
+}
+
+.week-column.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #EF4444;
+
+    left: -6px;
+
+    top: 515px;
+
+    z-index: 3;
+
+}
+
+
+/* =====================================================
+   EVENT CARD
+===================================================== */
+
+.schedule-event {
+
+    position: absolute;
+
+    left: 8px;
+
+    right: 8px;
+
+    top: 470px;
+
+    min-height: 110px;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow: 0 12px 25px rgba(37, 99, 235, .18);
+
+}
+
+.schedule-event:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.schedule-event.high {
+
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+
+}
+
+.schedule-event.medium {
+
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+
+}
+
+.schedule-event.low {
+
+    background: linear-gradient(135deg, #10B981, #059669);
+
+}
+
+.schedule-event h4 {
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+    font-weight: 700;
+
+}
+
+.schedule-event p {
+
+    font-size: 13px;
+
+    opacity: .95;
+
+    margin-bottom: 12px;
+
+}
+
+.event-time {
+
+    display: inline-flex;
+
+    padding: 6px 12px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, .18);
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+
+}
+
+.event-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 10px;
+
+}
+
+.event-footer span {
+
+    font-size: 12px;
+
+}
+
+.event-footer i {
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   FLOATING BUTTON
+===================================================== */
+
+.add-event {
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    box-shadow: 0 15px 35px rgba(37, 99, 235, .28);
+
+    transition: .3s;
+
+}
+
+.add-event:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* =====================================================
+   RIGHT SIDEBAR
+===================================================== */
+
+.schedule-sidebar {
+
+    position: sticky;
+
+    top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.schedule-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+.schedule-card h3 {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.status-badge {
+
+    padding: 6px 12px;
+
+    border-radius: 30px;
+
+    background: #FEF3C7;
+
+    color: #B45309;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.info-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+.info-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.info-item span {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+}
+
+.info-item strong {
+
+    font-size: 14px;
+
+    color: #111827;
+
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+}
+
+.form-group:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.form-group label {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #475569;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid #DCE3ED;
+
+    border-radius: 12px;
+
+    padding: 0 14px;
+
+    outline: none;
+
+    transition: .25s;
+
+    font-size: 14px;
+
+    background: #FFFFFF;
+
+}
+
+.form-group textarea {
+
+    height: 110px;
+
+    padding-top: 12px;
+
+    resize: none;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .08);
+
+}
+
+
+/* =====================================================
+   PLAYLIST
+===================================================== */
+
+.playlist-selector {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.playlist-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    border: 1px solid #E5E7EB;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.playlist-item:hover {
+
+    border-color: #2563EB;
+
+    background: #F8FBFF;
+
+}
+
+.playlist-item.active {
+
+    background: #EEF4FF;
+
+    border-color: #2563EB;
+
+}
+
+.playlist-item h4 {
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+
+}
+
+.playlist-item span {
+
+    font-size: 12px;
+
+    color: #64748B;
+
+}
+
+.playlist-item i {
+
+    color: #2563EB;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================================
+   SCREEN
+===================================================== */
+
+.selected-screen {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px;
+
+    margin-top: 14px;
+
+    background: #F8FAFC;
+
+    border-radius: 14px;
+
+}
+
+.selected-screen i {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 12px;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.selected-screen strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+}
+
+.selected-screen span {
+
+    color: #22C55E;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   PRIORITY
+===================================================== */
+
+.priority-group {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.priority-btn {
+
+    flex: 1;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #F3F4F6;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.priority-btn.active {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.priority-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   SWITCH
+===================================================== */
+
+.switch-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.switch-row h4 {
+
+    margin-bottom: 4px;
+
+    font-size: 15px;
+
+}
+
+.switch-row span {
+
+    font-size: 12px;
+
+    color: #64748B;
+
+}
+
+.switch {
+
+    position: relative;
+
+    width: 52px;
+
+    height: 30px;
+
+}
+
+.switch input {
+
+    display: none;
+
+}
+
+.slider {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #CBD5E1;
+
+    border-radius: 30px;
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.slider::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+
+    height: 22px;
+
+    background: #FFFFFF;
+
+    border-radius: 50%;
+
+    left: 4px;
+
+    top: 4px;
+
+    transition: .25s;
+
+}
+
+.switch input:checked+.slider {
+
+    background: #2563EB;
+
+}
+
+.switch input:checked+.slider::before {
+
+    transform: translateX(22px);
+
+}
+
+
+/* =====================================================
+   SAVE PANEL
+===================================================== */
+
+.schedule-save {
+
+    position: sticky;
+
+    bottom: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.full-btn {
+
+    width: 100%;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1400px) {
+
+    .schedule-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .schedule-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+    .schedule-save {
+
+        position: relative;
+
+    }
+
+}
+
+@media(max-width:992px) {
+
+    .builder-toolbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .toolbar-right {
+
+        width: 100%;
+
+    }
+
+    .toolbar-right button {
+
+        flex: 1;
+
+    }
+
+    .calendar-toolbar {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+    }
+
+    .calendar-right {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        width: 100%;
+
+    }
+
+    .page-action button {
+
+        flex: 1;
+
+    }
+
+    .toolbar-left {
+
+        width: 100%;
+
+    }
+
+    .schedule-chip {
+
+        flex: 1;
+
+        justify-content: center;
+
+    }
+
+    .priority-group {
+
+        flex-direction: column;
+
+    }
+
+}

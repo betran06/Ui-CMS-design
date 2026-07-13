@@ -73,14 +73,40 @@
                 Device
             </li>
 
-            <li>
+            <!--<li>
                 <i class="fa-brands fa-android"></i>
                 App
-            </li>
+            </li> -->
 
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                Settings
+            <li class="has-submenu">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                    <i class="fa-solid fa-chevron-down submenu-arrow"></i>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="user.html">
+                            <i class="fa-regular fa-user"></i>
+                            User
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-regular fa-circle-question"></i>
+                            About
+                        </a>
+                    </li>
+                </ul>
             </li>
 
         </ul>
@@ -186,23 +212,21 @@
             <!-- Toolbar -->
 
             <div class="toolbar">
-                <div class="content-count">
-
-                    <i class="fa-solid fa-photo-film"></i>
-
-                    <span>1 Content</span>
-
-                </div>
-
                 <div class="toolbar-left">
+                    <div class="content-count">
 
-                    <button class="primary-btn">
+                        <i class="fa-solid fa-photo-film"></i>
+
+                        <span>1 Content</span>
+
+                    </div>
+                    <!-- <button class="primary-btn">
 
                         <i class="fa-solid fa-plus"></i>
 
                         Create Content
 
-                    </button>
+                    </button> -->
 
                     <button class="secondary-btn" id="openAddContentModal">
 

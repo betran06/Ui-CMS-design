@@ -1,0 +1,290 @@
+<!-- =====================================================
+    PLAYLIST CONTENT MODAL
+===================================================== -->
+
+<div class="playlist-modal-overlay" id="playlistModal">
+
+    <div class="playlist-modal">
+
+        <!-- =====================================================
+            HEADER
+        ====================================================== -->
+
+        <div class="playlist-modal-header">
+
+            <h2>
+
+                Select Content
+
+            </h2>
+
+            <button class="close-playlist-modal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+            TABS
+        ====================================================== -->
+
+        <div class="playlist-tabs">
+
+            <button class="playlist-tab active" data-tab="recent">
+
+                Recent
+
+            </button>
+
+            <button class="playlist-tab" data-tab="content">
+
+                Content
+
+            </button>
+
+            <button class="playlist-tab" data-tab="playlist">
+
+                Playlist
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+            TOOLBAR
+        ====================================================== -->
+
+        <div class="playlist-toolbar">
+
+            <div class="playlist-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search content...">
+
+            </div>
+
+            <div class="playlist-filter">
+
+                <button>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    Date
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            INFO BAR
+        ====================================================== -->
+
+        <div class="playlist-info-bar">
+
+            <div class="playlist-count">
+
+                <span>
+
+                    2 Items
+
+                </span>
+
+            </div>
+
+            <div class="playlist-toggle">
+
+                <span>
+
+                    Hide unavailable
+
+                </span>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            RECENT TAB
+        ====================================================== -->
+
+        <div class="playlist-tab-content active" id="recent">
+
+            <div class="playlist-grid">
+
+                <!-- Card -->
+
+                <div class="playlist-select-card">
+
+                    <label class="select-radio">
+
+                        <input type="radio" name="playlistContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="playlist-thumb">
+
+                        <img src="https://placehold.co/420x240/E5E7EB/111827?text=NEWS">
+
+                    </div>
+
+                    <div class="playlist-card-body">
+
+                        <h3>
+
+                            Company News
+
+                        </h3>
+
+                        <span class="type image">
+
+                            Image
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card -->
+
+                <div class="playlist-select-card">
+
+                    <label class="select-radio">
+
+                        <input type="radio" name="playlistContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="playlist-thumb">
+
+                        <img src="https://placehold.co/420x240/D1D5DB/111827?text=VIDEO">
+
+                    </div>
+
+                    <div class="playlist-card-body">
+
+                        <h3>
+
+                            Product Promotion
+
+                        </h3>
+
+                        <span class="type video">
+
+                            Video
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            CONTENT TAB
+        ====================================================== -->
+
+        <div class="playlist-tab-content" id="content">
+
+            <div class="playlist-empty">
+
+                <i class="fa-regular fa-folder-open"></i>
+
+                <h3>
+
+                    Content Library
+
+                </h3>
+
+                <p>
+
+                    Your uploaded images, videos,
+                    PDFs and HTML content will
+                    appear here.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            PLAYLIST TAB
+        ====================================================== -->
+
+        <div class="playlist-tab-content" id="playlist">
+
+            <div class="playlist-empty">
+
+                <i class="fa-solid fa-list"></i>
+
+                <h3>
+
+                    Saved Playlist
+
+                </h3>
+
+                <p>
+
+                    Choose an existing playlist
+                    to reuse inside this schedule.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            FOOTER
+        ====================================================== -->
+
+        <div class="playlist-modal-footer">
+
+            <button class="outline-btn cancel-playlist-modal">
+
+                Cancel
+
+            </button>
+
+            <button class="primary-btn select-playlist-btn">
+
+                Select
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

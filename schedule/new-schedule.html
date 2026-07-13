@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule | SignPlus CMS</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="new-schedule.css">
+    <link rel="stylesheet" href="../css/screen.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fa-solid fa-display"></i>
+        <span>SignPlus CMS</span>
+    </div>
+
+    <ul class="menu">
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-desktop"></i>
+            Screen
+        </li>
+
+        <li>
+            <i class="fa-solid fa-photo-film"></i>
+            Content
+        </li>
+
+        <li>
+            <i class="fa-solid fa-list"></i>
+            Playlist
+        </li>
+
+        <li>
+            <i class="fa-solid fa-calendar-days"></i>
+            Schedule
+        </li>
+
+        <li>
+            <i class="fa-solid fa-database"></i>
+            Storage
+        </li>
+
+        <li>
+            <i class="fa-solid fa-tv"></i>
+            Device
+        </li>
+
+        <!-- <li>
+            <i class="fa-brands fa-android"></i>
+            App
+        </li> -->
+
+        <li class="has-submenu">
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+                <i class="fa-solid fa-chevron-down submenu-arrow"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="user.html">
+                        <i class="fa-regular fa-user"></i>
+                        User
+                    </a>
+                </li>
+
+                <li>
+                    <a href="notifications.html">
+                        <i class="fa-regular fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        <i class="fa-regular fa-circle-question"></i>
+                        About
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+
+<main class="main">
+    <!-- ================= Topbar ================= -->
+    <header class="topbar">
+        <div class="logo-text">
+            New Schedule
+        </div>
+
+        <div class="topbar-right">
+            <div class="notification">
+                <button id="notificationBtn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="notification-menu">
+                    <h4>Notifications</h4>
+
+                    <div class="notify-item">
+                        Screen Lobby Online
+                    </div>
+
+                    <div class="notify-item">
+                        New Playlist Published
+                    </div>
+                </div>
+            </div>
+
+            <div class="user">
+                <button id="userBtn">
+                    <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                    <span>Betran</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="user-menu">
+                    <div class="user-info">
+                        <strong>Betran Arya</strong>
+                        <small>betran@email.com</small>
+                    </div>
+                    <hr>
+
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Sign Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =====================================================
+        CONTENT
+    ===================================================== -->
+
+    <section class="content new-schedule-page">
+        <!-- ==========================================
+            PAGE HEADER
+        ========================================== -->
+
+        <div class="page-header">
+            <div class="page-title">
+                <button class="back-btn">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+                <div>
+
+                    <span class="breadcrumb">
+
+                        Schedule /
+                        <strong>New Schedule</strong>
+
+                    </span>
+
+                    <h1 id="scheduleName">
+
+                        Company Promotion Schedule
+
+                    </h1>
+
+                </div>
+
+                <button class="edit-btn">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                </button>
+
+            </div>
+
+            <div class="page-action">
+
+                <button class="outline-btn">
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    Preview
+
+                </button>
+
+                <button class="primary-btn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Schedule
+
+                </button>
+            </div>
+        </div>
+
+        <!-- ==========================================
+            TOOLBAR
+        ========================================== -->
+
+        <div class="builder-toolbar">
+            <div class="toolbar-left">
+                <div class="schedule-chip">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Weekly Schedule
+
+                </div>
+
+                <div class="schedule-chip">
+
+                    <i class="fa-solid fa-display"></i>
+
+                    5 Screens
+
+                </div>
+
+                <div class="schedule-chip">
+
+                    <i class="fa-solid fa-list"></i>
+
+                    3 Playlist
+
+                </div>
+
+            </div>
+
+            <div class="toolbar-right">
+                <button class="secondary-btn" id="openAddContentModal">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Playlist
+
+                </button>
+
+                <button class="secondary-btn">
+
+                    <i class="fa-solid fa-desktop"></i>
+
+                    Assign Screen
+
+                </button>
+
+                <button class="primary-btn">
+
+                    Publish
+
+                </button>
+            </div>
+        </div>
+
+        <!-- ==========================================
+            MAIN LAYOUT
+        ========================================== -->
+
+        <div class="schedule-layout">
+            <!-- ======================================
+                CALENDAR PANEL
+            ======================================= -->
+
+            <section class="calendar-panel">
+                <!-- Calendar Toolbar -->
+
+                <div class="calendar-toolbar">
+                    <div class="calendar-left">
+                        <button class="calendar-nav">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+                        <div class="calendar-title">
+
+                            <h2>
+
+                                July 2026
+
+                            </h2>
+
+                            <span>
+
+                                Week 28
+
+                            </span>
+
+                        </div>
+
+                        <button class="calendar-nav">
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+                    </div>
+
+                    <div class="calendar-right">
+                        <button class="today-btn">
+
+                            Today
+
+                        </button>
+
+                        <button class="view-btn active">
+
+                            Week
+
+                        </button>
+
+                        <button class="view-btn">
+
+                            Month
+
+                        </button>
+
+                        <button class="view-btn">
+
+                            List
+
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Day Header -->
+
+                <div class="calendar-days">
+                    <div class="time-head">
+
+                        Time
+
+                    </div>
+
+                    <div class="day-card">
+
+                        <span>Mon</span>
+
+                        <strong>06</strong>
+
+                    </div>
+
+                    <div class="day-card">
+
+                        <span>Tue</span>
+
+                        <strong>07</strong>
+
+                    </div>
+
+                    <div class="day-card">
+
+                        <span>Wed</span>
+
+                        <strong>08</strong>
+
+                    </div>
+
+                    <div class="day-card">
+
+                        <span>Thu</span>
+
+                        <strong>09</strong>
+
+                    </div>
+
+                    <div class="day-card active">
+
+                        <span>Fri</span>
+
+                        <strong>10</strong>
+
+                    </div>
+
+                    <div class="day-card">
+
+                        <span>Sat</span>
+
+                        <strong>11</strong>
+
+                    </div>
+
+                    <div class="day-card">
+
+                        <span>Sun</span>
+
+                        <strong>12</strong>
+
+                    </div>
+                </div>
+
+                <!-- ======================================
+                    CALENDAR BODY
+                ======================================= -->
+
+                <div class="calendar-body">
+
+                    <!-- Time -->
+
+                    <div class="time-column">
+
+                        <span>00:00</span>
+                        <span>01:00</span>
+                        <span>02:00</span>
+                        <span>03:00</span>
+                        <span>04:00</span>
+                        <span>05:00</span>
+                        <span>06:00</span>
+                        <span>07:00</span>
+                        <span>08:00</span>
+                        <span>09:00</span>
+                        <span>10:00</span>
+                        <span>11:00</span>
+                        <span>12:00</span>
+                        <span>13:00</span>
+                        <span>14:00</span>
+                        <span>15:00</span>
+                        <span>16:00</span>
+                        <span>17:00</span>
+                        <span>18:00</span>
+                        <span>19:00</span>
+                        <span>20:00</span>
+                        <span>21:00</span>
+                        <span>22:00</span>
+                        <span>23:00</span>
+
+                    </div>
+
+                    <!-- Week Grid -->
+
+                    <div class="week-grid">
+
+                        <div class="week-column"></div>
+
+                        <div class="week-column"></div>
+
+                        <div class="week-column"></div>
+
+                        <div class="week-column"></div>
+
+                        <div class="week-column active">
+
+                            <!-- Dummy Event -->
+
+                            <div class="schedule-event high">
+
+                                <div class="event-time">
+
+                                    08:00 - 12:00
+
+                                </div>
+
+                                <h4>
+
+                                    Morning Promotion
+
+                                </h4>
+
+                                <p>
+
+                                    Lobby Playlist
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="week-column"></div>
+
+                        <div class="week-column"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ======================================
+            RIGHT SIDEBAR
+        ======================================= -->
+
+            <aside class="schedule-sidebar">
+
+                <!-- ======================================
+                OVERVIEW
+            ======================================= -->
+
+                <div class="schedule-card">
+
+                    <div class="card-header">
+
+                        <h3>
+
+                            Schedule Details
+
+                        </h3>
+
+                        <span class="status-badge">
+
+                            Draft
+
+                        </span>
+
+                    </div>
+
+                    <div class="info-list">
+
+                        <div class="info-item">
+
+                            <span>
+
+                                Created By
+
+                            </span>
+
+                            <strong>
+
+                                Betran Arya
+
+                            </strong>
+
+                        </div>
+
+                        <div class="info-item">
+
+                            <span>
+
+                                Last Modified
+
+                            </span>
+
+                            <strong>
+
+                                Today · 10:20 AM
+
+                            </strong>
+
+                        </div>
+
+                        <div class="info-item">
+
+                            <span>
+
+                                Time Zone
+
+                            </span>
+
+                            <strong>
+
+                                GMT +07:00
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ======================================
+                SCREEN
+                ======================================= -->
+
+                <div class="schedule-card">
+
+                    <h3>
+
+                        Assign Screen
+
+                    </h3>
+
+                    <button class="outline-btn full-btn">
+
+                        <i class="fa-solid fa-display"></i>
+
+                        Select Screen
+
+                    </button>
+
+                    <div class="selected-screen">
+
+                        <i class="fa-solid fa-tv"></i>
+
+                        <div>
+
+                            <strong>
+
+                                Lobby LED
+
+                            </strong>
+
+                            <span>
+
+                                Connected
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ======================================
+                    ACTIVE
+                ======================================= -->
+
+                <div class="schedule-card">
+
+                    <div class="switch-row">
+
+                        <div>
+
+                            <h4>
+
+                                Publish Schedule
+
+                            </h4>
+
+                            <span>
+
+                                Enable immediately
+
+                            </span>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================
+    ADD CONTENT MODAL
+====================================== -->
+
+    <div id="contentModalContainer"></div>
+
+    <script src="../js/dashboard.js"></script>
+
+    <script src="../js/content/add-content-modal.js"></script>
+
+    <script src="/schedule/new-schedule.js"></script>
+
+    </body>
+
+</html>

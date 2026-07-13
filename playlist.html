@@ -20,11 +20,8 @@
 </head>
 
 <body>
-
     <!-- ================= Sidebar ================= -->
-
     <aside class="sidebar">
-
         <div class="sidebar-logo">
 
             <i class="fa-solid fa-display"></i>
@@ -70,28 +67,49 @@
                 Device
             </li>
 
-            <li>
+            <!-- <li>
                 <i class="fa-brands fa-android"></i>
                 App
-            </li>
+            </li> -->
 
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                Settings
-            </li>
+            <li class="has-submenu">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                    <i class="fa-solid fa-chevron-down submenu-arrow"></i>
+                </a>
 
+                <ul class="submenu">
+                    <li>
+                        <a href="user.html">
+                            <i class="fa-regular fa-user"></i>
+                            User
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-regular fa-circle-question"></i>
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
-
     </aside>
 
     <!-- ================= MAIN ================= -->
 
     <main class="main">
-
         <!-- ================= TOPBAR ================= -->
-
         <header class="topbar">
-
             <div class="logo-text">
 
                 Playlist
@@ -99,7 +117,6 @@
             </div>
 
             <div class="topbar-right">
-
                 <div class="notification">
 
                     <button id="notificationBtn">
@@ -123,13 +140,10 @@
                             New Content Added
 
                         </div>
-
                     </div>
-
                 </div>
 
                 <div class="user">
-
                     <button id="userBtn">
 
                         <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
@@ -167,24 +181,26 @@
                             Sign Out
 
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
-
         </header>
 
         <!-- ================= CONTENT ================= -->
 
         <section class="content">
-
             <!-- Toolbar -->
-
             <div class="toolbar">
 
                 <div class="toolbar-left">
+
+                    <div class="playlist-count">
+
+                        <i class="fa-solid fa-list"></i>
+
+                        <span>1 Playlist</span>
+
+                    </div>
 
                     <button class="primary-btn">
 
@@ -199,14 +215,6 @@
                 </div>
 
                 <div class="toolbar-right">
-
-                    <div class="playlist-count">
-
-                        <i class="fa-solid fa-list"></i>
-
-                        <span>1 Playlist</span>
-
-                    </div>
 
                     <select>
 
@@ -233,11 +241,8 @@
             <!-- Playlist List -->
 
             <div class="playlist-list">
-
                 <!-- Playlist Card -->
-
                 <div class="playlist-card">
-
                     <div class="playlist-thumb">
 
                         <img src="https://placehold.co/640x360/0F172A/FFFFFF?text=Playlist+Preview">
@@ -251,9 +256,7 @@
                     </div>
 
                     <div class="playlist-info">
-
                         <div class="playlist-title">
-
                             <div>
 
                                 <h2>New Playlist</h2>
@@ -361,19 +364,14 @@
                                 Delete
 
                             </button>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
             <!-- Empty State -->
 
             <div class="empty-state">
-
                 <img src="https://placehold.co/300x220/F3F4F6/6B7280?text=No+Playlist">
 
                 <h2>No Playlist Found</h2>
@@ -387,11 +385,8 @@
                     Create Playlist
 
                 </button>
-
             </div>
-
         </section>
-
     </main>
 
     <script src="js/dashboard.js"></script>

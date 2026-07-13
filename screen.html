@@ -68,13 +68,39 @@
                 Device
             </li>
 
-            <li>
+            <!-- <li>
                 <i class="fa-brands fa-android"></i>
                 App
-            </li>
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                Settings
+            </li> -->
+            <li class="has-submenu">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                    <i class="fa-solid fa-chevron-down submenu-arrow"></i>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="user.html">
+                            <i class="fa-regular fa-user"></i>
+                            User
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-regular fa-circle-question"></i>
+                            About
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </aside>
@@ -147,6 +173,10 @@
 
             <div class="toolbar">
                 <div class="toolbar-left">
+                    <div class="screen-count">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>2 Screens</span>
+                    </div>
                     <button class="primary-btn" id="openScreenModal">
 
                         <i class="fa-solid fa-plus"></i>
@@ -154,15 +184,12 @@
                         Add Screen
 
                     </button>
-                    <button class="secondary-btn">
+                    <!-- <button class="secondary-btn">
                         <i class="fa-solid fa-table-cells-large"></i>
                         New Screen Wall
-                    </button>
+                    </button> -->
                 </div>
-                <div class="screen-count">
-                    <i class="fa-solid fa-desktop"></i>
-                    <span>2 Screens</span>
-                </div>
+
 
                 <div class="toolbar-right">
                     <select>

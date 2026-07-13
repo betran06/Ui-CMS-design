@@ -1,6 +1,5 @@
 /* ======================================================
-   SIGNPLUS CMS
-   ADD CONTENT MODAL
+   SIGNPLUS CMS ADD CONTENT MODAL
 ====================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!container) return;
 
-    fetch("content/add-content-modal.html")
+    const pathPrefix = window.location.pathname.includes('/playlist/') || window.location.pathname.includes('/scedule/') ? '../' : '';
+
+    fetch(pathPrefix + "content/add-content-modal.html")
         .then(response => response.text())
         .then(html => {
 

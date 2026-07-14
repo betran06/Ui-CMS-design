@@ -19,7 +19,7 @@ function loadPlaylistModal() {
 
     if (!container) return;
 
-    fetch("modal/playlist-modal.html")
+    fetch("playlist-modal.html")
 
         .then(response => response.text())
 
@@ -199,9 +199,11 @@ function bindModalEvents() {
 
 function openPlaylistModal() {
 
-    document
-        .getElementById("playlistModal")
-        .classList.add("show");
+    const modal = document.getElementById("playlistModal");
+
+    if (!modal) return;
+
+    modal.classList.add("show");
 
 }
 
@@ -212,9 +214,11 @@ function openPlaylistModal() {
 
 function closePlaylistModal() {
 
-    document
-        .getElementById("playlistModal")
-        .classList.remove("show");
+    const modal = document.getElementById("playlistModal");
+
+    if (!modal) return;
+
+    modal.classList.remove("show");
 
 }
 

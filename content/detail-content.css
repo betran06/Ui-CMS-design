@@ -1,0 +1,623 @@
+/* =====================================================
+   DETAIL CONTENT PAGE
+===================================================== */
+
+.detail-content-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.page-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.page-title h1 {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-top: 4px;
+
+}
+
+.breadcrumb {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    margin-bottom: 4px;
+
+}
+
+.back-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, .06);
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.back-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.edit-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.edit-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.page-action {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.detail-content-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 360px;
+
+    gap: 24px;
+
+    align-items: start;
+
+}
+
+
+/* =====================================================
+   CONTENT PREVIEW
+===================================================== */
+
+.content-preview-section {
+
+    background: #FFFFFF;
+
+    border-radius: 22px;
+
+    padding: 24px;
+
+    border: 1px solid #EEF2F7;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .05);
+
+}
+
+.content-preview {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #F8FAFC;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    min-height: 680px;
+
+}
+
+.content-preview img {
+
+    max-width: 100%;
+
+    max-height: 640px;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.content-sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    position: sticky;
+
+    top: 20px;
+
+}
+
+.content-action-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+.full-btn {
+
+    width: 100%;
+
+    height: 50px;
+
+}
+
+/* =====================================================
+   INFO CARD
+===================================================== */
+
+.content-info-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .05);
+
+}
+
+
+/* =====================================================
+   TAB
+===================================================== */
+
+.content-tabs {
+
+    display: flex;
+
+    border-bottom: 1px solid #EEF2F7;
+
+}
+
+.content-tab {
+
+    flex: 1;
+
+    height: 58px;
+
+    border: none;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #64748B;
+
+    position: relative;
+
+    transition: .25s;
+
+}
+
+.content-tab:hover {
+
+    background: #F8FAFC;
+
+}
+
+.content-tab.active {
+
+    color: #2563EB;
+
+}
+
+.content-tab.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: #2563EB;
+
+}
+
+
+/* =====================================================
+   TAB BODY
+===================================================== */
+
+.content-tab-body {
+
+    display: none;
+
+    padding: 24px;
+
+}
+
+.content-tab-body.active {
+
+    display: block;
+
+}
+
+
+/* =====================================================
+   INFO ITEM
+===================================================== */
+
+.info-item {
+
+    padding-bottom: 22px;
+
+    margin-bottom: 22px;
+
+    border-bottom: 1px solid #EEF2F7;
+
+}
+
+.info-item:last-child {
+
+    margin-bottom: 0;
+
+    border-bottom: none;
+
+}
+
+.info-item label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #64748B;
+
+    margin-bottom: 8px;
+
+}
+
+.info-item p {
+
+    color: #111827;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 5px 12px;
+
+    border-radius: 999px;
+
+    border: 1px solid #CBD5E1;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-right: 8px;
+
+    background: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   TAG BUTTON
+===================================================== */
+
+.add-tag-btn {
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.add-tag-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-group {
+
+    margin-bottom: 22px;
+
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #64748B;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.form-group input,
+
+.form-group textarea,
+
+.form-group select {
+
+    width: 100%;
+
+    border: 1px solid #DCE3ED;
+
+    border-radius: 14px;
+
+    padding: 14px 16px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: .25s;
+
+    background: #FFFFFF;
+
+}
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus,
+
+.form-group select:focus {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .08);
+
+}
+
+
+/* =====================================================
+   SAVE BUTTON
+===================================================== */
+
+.save-setting-btn {
+
+    width: 100%;
+
+    height: 50px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1200px) {
+
+    .detail-content-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .content-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+    }
+
+    .page-action button {
+
+        flex: 1;
+
+    }
+
+    .content-preview {
+
+        min-height: 400px;
+
+        padding: 20px;
+
+    }
+
+    .content-preview img {
+
+        max-height: 350px;
+
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .page-title {
+
+        flex-wrap: wrap;
+
+    }
+
+    .page-title h1 {
+
+        font-size: 24px;
+
+    }
+
+    .content-tabs {
+
+        flex-direction: column;
+
+    }
+
+}

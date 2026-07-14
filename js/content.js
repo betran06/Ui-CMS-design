@@ -304,3 +304,17 @@ setTimeout(() => {
     showToast("Content Library Loaded");
 
 }, 800);
+
+/* =====================================================
+   DETAIL CONTENT
+===================================================== */
+
+document.querySelectorAll(".content-card").forEach(card => {
+
+    card.addEventListener("click", function () {
+
+        window.location.href = "content/detail-content.html";
+
+    });
+
+});

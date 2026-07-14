@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Content Detail - SignPlus CMS</title>
+
+    <!-- GLOBAL -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/screen.css">
+
+    <!-- PAGE -->
+
+    <link rel="stylesheet" href="detail-content.css">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+        SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+
+                <a href="../dashboard.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../screen.html">
+
+                    <i class="fa-solid fa-desktop"></i>
+
+                    Screen
+
+                </a>
+
+            </li>
+
+            <li class="active">
+
+                <a href="../content.html">
+
+                    <i class="fa-solid fa-photo-film"></i>
+
+                    Content
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../playlist.html">
+
+                    <i class="fa-solid fa-list"></i>
+
+                    Playlist
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../schedule.html">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Schedule
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../storage.html">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    Storage
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../device.html">
+
+                    <i class="fa-solid fa-tv"></i>
+
+                    Device
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../app.html">
+
+                    <i class="fa-brands fa-android"></i>
+
+                    App
+
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <!-- =====================================================
+        MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+        <!-- =====================================================
+            TOPBAR
+        ====================================================== -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Content Detail
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <button>
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="user">
+
+                    <button>
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+            CONTENT
+        ====================================================== -->
+
+        <section class="content detail-content-page">
+
+            <!-- =====================================================
+                HEADER
+            ====================================================== -->
+
+            <div class="page-header">
+
+                <div class="page-title">
+
+                    <button class="back-btn" id="backContent">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </button>
+
+                    <div>
+
+                        <div class="breadcrumb">
+
+                            Content / Detail
+
+                        </div>
+
+                        <h1>
+
+                            LED Promotion July 2026
+
+                        </h1>
+
+                    </div>
+
+                    <button class="edit-btn" id="editContentName">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="page-action">
+
+                    <button class="primary-btn" id="setToScreenBtn">
+
+                        <i class="fa-solid fa-tv"></i>
+
+                        Set To Screens
+
+                    </button>
+
+                    <button class="outline-btn" id="previewBtn">
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </button>
+
+                    <button class="outline-btn" id="downloadBtn">
+
+                        <i class="fa-solid fa-download"></i>
+
+                    </button>
+
+                    <button class="outline-btn" id="moreBtn">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- =====================================================
+                DETAIL LAYOUT
+            ====================================================== -->
+
+            <div class="detail-content-wrapper">
+
+                <!-- =====================================================
+                    CONTENT PREVIEW
+                ====================================================== -->
+
+                <section class="content-preview-section">
+
+                    <div class="content-preview">
+
+                        <img src="../assets/image/content.png" alt="Content Preview">
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =====================================================
+                    SIDEBAR
+                ====================================================== -->
+
+                <aside class="content-sidebar">
+
+                    <!-- ACTION -->
+                    <!-- 
+                    <div class="content-action-card">
+
+                        <button class="primary-btn full-btn" id="setToScreenSidebar">
+
+                            <i class="fa-solid fa-tv"></i>
+
+                            Set To Screens
+
+                        </button>
+
+                    </div> -->
+
+
+                    <!-- =====================================================
+                        INFO / SETTINGS TAB
+                    ====================================================== -->
+
+                    <div class="content-info-card">
+
+                        <div class="content-tabs">
+
+                            <button class="content-tab active" data-tab="info">
+
+                                INFO
+
+                            </button>
+
+                            <button class="content-tab" data-tab="settings">
+
+                                SETTINGS
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- =====================================================
+                            INFO
+                        ====================================================== -->
+
+                        <div class="content-tab-body active" id="info">
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Content Type
+
+                                </label>
+
+                                <p>
+
+                                    <span class="badge">
+
+                                        Image
+
+                                    </span>
+
+                                    PNG
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Resolution
+
+                                </label>
+
+                                <p>
+
+                                    1672 × 941
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Size
+
+                                </label>
+
+                                <p>
+
+                                    1.65 MB
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Updated By
+
+                                </label>
+
+                                <p>
+
+                                    Betran Arya
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Date Updated
+
+                                </label>
+
+                                <p>
+
+                                    14 Jul 2026
+                                    11:03
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Added By
+
+                                </label>
+
+                                <p>
+
+                                    Betran Arya
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Date Added
+
+                                </label>
+
+                                <p>
+
+                                    08 Jul 2026
+                                    11:17
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <label>
+
+                                    Tag
+
+                                </label>
+
+                                <button class="add-tag-btn">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =====================================================
+                            SETTINGS
+                        ====================================================== -->
+
+                        <div class="content-tab-body" id="settings">
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Content Name
+
+                                </label>
+
+                                <input type="text" value="Company News">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Description
+
+                                </label>
+
+                                <textarea rows="5" placeholder="Write description..."></textarea>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Orientation
+
+                                </label>
+
+                                <select>
+
+                                    <option>
+
+                                        Landscape
+
+                                    </option>
+
+                                    <option>
+
+                                        Portrait
+
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <button class="primary-btn save-setting-btn">
+
+                                Save Changes
+
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+    <script src="detail-content.js"></script>
+
+</body>
+
+</html>

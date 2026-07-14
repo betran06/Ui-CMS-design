@@ -290,3 +290,16 @@ setTimeout(() => {
     showToast("Welcome to Screen Management");
 
 }, 800);
+
+/* ===========================================
+   REDIRECT
+=========================================== */
+document.querySelectorAll(".virtual-screen").forEach(card => {
+
+    card.onclick = function () {
+
+        window.location.href = "screen/detail-screen.html";
+
+    };
+
+});

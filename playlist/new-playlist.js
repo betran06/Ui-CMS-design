@@ -43,7 +43,7 @@ function backButton() {
 
         if (confirm("Leave this page? Unsaved changes will be lost.")) {
 
-            window.location.href = "playlist.html";
+            window.location.href = "../playlist.html";
 
         }
 

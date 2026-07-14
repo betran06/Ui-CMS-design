@@ -40,20 +40,20 @@ function initSchedule() {
 
 
 /* =====================================================
-   BACK
+   BACK BUTTON
 ===================================================== */
 
 function backButton() {
 
-    const back = document.querySelector(".back-btn");
+    const button = document.getElementById("backSchedule");
 
-    if (!back) return;
+    if (!button) return;
 
-    back.addEventListener("click", () => {
+    button.onclick = () => {
 
-        window.location.href = "schedule.html";
+        window.location.href = "../schedule.html";
 
-    });
+    };
 
 }
 

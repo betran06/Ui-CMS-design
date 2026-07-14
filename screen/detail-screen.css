@@ -1,0 +1,598 @@
+/* =====================================================
+   DETAIL SCREEN
+===================================================== */
+
+.detail-screen-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+.page-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.page-title h1 {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-top: 4px;
+
+}
+
+.breadcrumb {
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    margin-bottom: 4px;
+
+}
+
+.back-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, .06);
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.back-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.edit-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.edit-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+.page-action {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.detail-screen-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 340px;
+
+    gap: 24px;
+
+    align-items: start;
+
+}
+
+
+/* =====================================================
+   LEFT
+===================================================== */
+
+.screen-preview-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.screen-status {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+.status-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+.status-right {
+
+    font-size: 14px;
+
+    color: #64748B;
+
+}
+
+.status-right strong {
+
+    color: #111827;
+
+}
+
+.status-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.status-badge.connected {
+
+    background: #ECFDF5;
+
+    color: #10B981;
+
+}
+
+.status-badge.playing {
+
+    background: #FFF7ED;
+
+    color: #F97316;
+
+}
+
+
+/* =====================================================
+   SCREEN FRAME
+===================================================== */
+
+.screen-frame {
+
+    background: #4B5563;
+
+    border-radius: 20px;
+
+    padding: 18px;
+
+    box-shadow: 0 12px 28px rgba(15, 23, 42, .12);
+
+}
+
+.screen-display {
+
+    background: #000000;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    aspect-ratio: 16/9;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.screen-display img {
+
+    width: 220px;
+
+    opacity: .95;
+
+}
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.screen-info-sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    position: sticky;
+
+    top: 20px;
+
+}
+
+
+/* =====================================================
+   ACTION CARD
+===================================================== */
+
+.screen-action-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+.full-btn {
+
+    width: 100%;
+
+    height: 50px;
+
+}
+
+
+/* =====================================================
+   INFO CARD
+===================================================== */
+
+.info-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EEF2F7;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, .05);
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.info-title {
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #2563EB;
+
+    border-bottom: 2px solid #2563EB;
+
+    background: #FAFBFC;
+
+}
+
+
+/* =====================================================
+   INFO ITEM
+===================================================== */
+
+.info-item {
+
+    padding: 18px 24px;
+
+    border-bottom: 1px solid #EEF2F7;
+
+}
+
+.info-item:last-child {
+
+    border-bottom: none;
+
+}
+
+.info-item label {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #64748B;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+.info-item p {
+
+    color: #111827;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.info-item .badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    border: 1px solid #CBD5E1;
+
+    background: #FFFFFF;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   TAG BUTTON
+===================================================== */
+
+.add-tag-btn {
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.add-tag-btn:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.outline-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1200px) {
+
+    .detail-screen-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .screen-info-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .page-action {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+    }
+
+    .page-action button {
+
+        flex: 1;
+
+    }
+
+    .screen-status {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .screen-frame {
+
+        padding: 12px;
+
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .page-title {
+
+        flex-wrap: wrap;
+
+    }
+
+    .page-title h1 {
+
+        font-size: 24px;
+
+    }
+
+    .status-left {
+
+        gap: 8px;
+
+    }
+
+    .status-badge {
+
+        font-size: 12px;
+
+    }
+
+}

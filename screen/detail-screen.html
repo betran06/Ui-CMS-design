@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Screen - SignPlus CMS</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" href="detail-screen.css">
+    <link rel="stylesheet" href="../css/screen.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- =====================================================
+        SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-display"></i>
+
+            <span>SignPlus CMS</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+
+                <a href="../dashboard.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li class="active">
+
+                <a href="../screen.html">
+
+                    <i class="fa-solid fa-desktop"></i>
+
+                    Screen
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../content.html">
+
+                    <i class="fa-solid fa-photo-film"></i>
+
+                    Content
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../playlist.html">
+
+                    <i class="fa-solid fa-list"></i>
+
+                    Playlist
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../schedule.html">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Schedule
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../storage.html">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    Storage
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../device.html">
+
+                    <i class="fa-solid fa-tv"></i>
+
+                    Device
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../app.html">
+
+                    <i class="fa-brands fa-android"></i>
+
+                    App
+
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <!-- =====================================================
+        MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+        <!-- =====================================================
+            TOPBAR
+        ====================================================== -->
+
+        <header class="topbar">
+
+            <div class="logo-text">
+
+                Screen Detail
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <button>
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="user">
+
+                    <button>
+
+                        <img src="https://ui-avatars.com/api/?name=Betran&background=2563eb&color=fff">
+
+                        <span>Betran</span>
+
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+
+        <!-- =====================================================
+            CONTENT
+        ====================================================== -->
+
+        <section class="content detail-screen-page">
+
+            <!-- =====================================================
+                PAGE HEADER
+            ====================================================== -->
+
+            <div class="page-header">
+
+                <div class="page-title">
+
+                    <button class="back-btn" id="backScreen">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </button>
+
+                    <div>
+
+                        <div class="breadcrumb">
+
+                            Screen / Detail
+
+                        </div>
+
+                        <h1>
+
+                            Virtual Screen
+
+                        </h1>
+
+                    </div>
+
+                    <button class="edit-btn">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="page-action">
+
+                    <!-- <button class="primary-btn"> -->
+                    <button class="primary-btn" id="setContentBtn">
+
+                        <i class="fa-solid fa-photo-film"></i>
+
+                        Set Content
+
+                    </button>
+
+                    <button class="outline-btn" id="refreshScreenBtn">
+
+                        <i class="fa-solid fa-rotate-right"></i>
+
+                    </button>
+
+                    <button class="outline-btn" id="moreScreenBtn">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- =====================================================
+                SCREEN LAYOUT
+            ====================================================== -->
+
+            <div class="detail-screen-wrapper">
+
+                <!-- =====================================================
+                    LEFT CONTENT
+                ====================================================== -->
+
+                <section class="screen-preview-section">
+
+                    <!-- STATUS -->
+
+                    <div class="screen-status">
+
+                        <div class="status-left">
+
+                            <span class="status-badge connected">
+
+                                <i class="fa-solid fa-circle"></i>
+
+                                Connected
+
+                            </span>
+
+                            <span class="status-badge playing">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Playing Default Content
+
+                            </span>
+
+                        </div>
+
+                        <div class="status-right">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            Last Check :
+                            <strong>
+
+                                14 Jul 2026 11:03
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SCREEN FRAME -->
+
+                    <div class="screen-frame">
+
+                        <div class="screen-display">
+
+                            <img src="../images/logo-signplus.png" alt="Screen Preview">
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =====================================================
+                    SIDEBAR
+                ====================================================== -->
+
+                <aside class="screen-info-sidebar">
+
+                    <!-- ACTION -->
+
+                    <div class="screen-action-card">
+
+                        <button class="primary-btn full-btn">
+
+                            <i class="fa-solid fa-photo-film"></i>
+
+                            Set Content
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- INFO -->
+
+                    <div class="info-card">
+
+                        <div class="info-title">
+
+                            Information
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Screen Type
+
+                            </label>
+
+                            <span class="badge">
+
+                                Virtual Screen
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Resolution
+
+                            </label>
+
+                            <p>
+
+                                1920 × 1080
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Location
+
+                            </label>
+
+                            <p>
+
+                                Jakarta Office
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Memo
+
+                            </label>
+
+                            <p>
+
+                                Main lobby display.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Updated By
+
+                            </label>
+
+                            <p>
+
+                                Betran Arya
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Last Updated
+
+                            </label>
+
+                            <p>
+
+                                14 Jul 2026
+                                11:03
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Tag
+
+                            </label>
+
+                            <button class="add-tag-btn">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <label>
+
+                                Subscription
+
+                            </label>
+
+                            <p>
+
+                                Professional Plan
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="playlistContentModalContainer"></div>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="detail-screen.js"></script>
+
+</body>
+
+</html>

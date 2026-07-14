@@ -1,0 +1,871 @@
+/* =====================================================
+   SCREEN SET CONTENT MODAL
+===================================================== */
+
+.screen-content-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, .55);
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 99999;
+
+}
+
+.screen-content-overlay.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.screen-content-modal {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    height: 760px;
+
+    background: #FFFFFF;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .18);
+
+    animation: screenModalUp .28s ease;
+
+}
+
+@keyframes screenModalUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.screen-content-header {
+
+    height: 78px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #EEF2F7;
+
+}
+
+.screen-content-header h2 {
+
+    font-size: 28px;
+
+    color: #111827;
+
+    font-weight: 700;
+
+}
+
+.screen-content-close {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #F8FAFC;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    font-size: 18px;
+
+}
+
+.screen-content-close:hover {
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =====================================================
+   TABS
+===================================================== */
+
+.screen-content-tabs {
+
+    display: flex;
+
+    border-bottom: 1px solid #EEF2F7;
+
+    overflow-x: auto;
+
+}
+
+.screen-content-tab {
+
+    height: 56px;
+
+    padding: 0 34px;
+
+    border: none;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #64748B;
+
+    position: relative;
+
+    transition: .25s;
+
+    white-space: nowrap;
+
+}
+
+.screen-content-tab:hover {
+
+    background: #F8FAFC;
+
+}
+
+.screen-content-tab.active {
+
+    color: #2563EB;
+
+}
+
+.screen-content-tab.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: #2563EB;
+
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.screen-content-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 24px 30px 18px;
+
+}
+
+.screen-content-search {
+
+    flex: 1;
+
+    position: relative;
+
+}
+
+.screen-content-search i {
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #94A3B8;
+
+}
+
+.screen-content-search input {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: 1px solid #DCE3ED;
+
+    border-radius: 14px;
+
+    padding: 0 20px 0 48px;
+
+    outline: none;
+
+    transition: .25s;
+
+}
+
+.screen-content-search input:focus {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .08);
+
+}
+
+.screen-content-filter button {
+
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #F8FAFC;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .25s;
+
+}
+
+.screen-content-filter button:hover {
+
+    background: #EEF4FF;
+
+}
+
+
+/* =====================================================
+   INFO BAR
+===================================================== */
+
+.screen-content-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 30px 20px;
+
+}
+
+.screen-content-count {
+
+    font-size: 15px;
+
+    color: #475569;
+
+}
+
+.screen-content-count strong {
+
+    font-size: 22px;
+
+    color: #111827;
+
+}
+
+.screen-content-toggle {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color: #64748B;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.screen-content-body {
+
+    display: none;
+
+    flex: 1;
+
+    overflow: auto;
+
+    padding: 0 30px 24px;
+
+}
+
+.screen-content-body.active {
+
+    display: block;
+
+}
+
+/* =====================================================
+   CONTENT GRID
+===================================================== */
+
+.screen-content-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    padding-top: 10px;
+
+}
+
+
+/* =====================================================
+   CONTENT CARD
+===================================================== */
+
+.screen-content-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 16px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.screen-content-card:hover {
+
+    border-color: #2563EB;
+
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .08);
+
+    transform: translateY(-2px);
+
+}
+
+.screen-content-card.selected {
+
+    border-color: #2563EB;
+
+    background: #F8FBFF;
+
+}
+
+
+/* =====================================================
+   RADIO
+===================================================== */
+
+.screen-content-radio {
+
+    position: absolute;
+
+    top: 14px;
+
+    left: 14px;
+
+}
+
+.screen-content-radio input {
+
+    display: none;
+
+}
+
+.screen-content-radio span {
+
+    width: 22px;
+
+    height: 22px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    border: 2px solid #CBD5E1;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.screen-content-radio input:checked+span {
+
+    background: #2563EB;
+
+    border-color: #2563EB;
+
+    box-shadow: inset 0 0 0 5px #FFFFFF;
+
+}
+
+
+/* =====================================================
+   THUMBNAIL
+===================================================== */
+
+.screen-content-thumb {
+
+    width: 150px;
+
+    height: 85px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+
+    background: #F8FAFC;
+
+}
+
+.screen-content-thumb img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =====================================================
+   PLAYLIST ICON
+===================================================== */
+
+.playlist-calendar {
+
+    width: 150px;
+
+    height: 85px;
+
+    border-radius: 12px;
+
+    background: #EEF4FF;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 38px;
+
+    color: #2563EB;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =====================================================
+   SCHEDULE CARD
+===================================================== */
+
+.schedule-calendar {
+
+    width: 150px;
+
+    height: 85px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #FF7A59, #FF9A8B);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #FFFFFF;
+
+    flex-shrink: 0;
+
+}
+
+.calendar-day {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+}
+
+.calendar-month {
+
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.screen-content-card-body {
+
+    flex: 1;
+
+}
+
+.screen-content-card-body h3 {
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #111827;
+
+    margin-bottom: 14px;
+
+}
+
+
+/* =====================================================
+   TYPE BADGE
+===================================================== */
+
+.type {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+.type.image {
+
+    background: #FFF1E8;
+
+    color: #F97316;
+
+}
+
+.type.video {
+
+    background: #F1F5F9;
+
+    color: #475569;
+
+}
+
+.type.html {
+
+    background: #EEF4FF;
+
+    color: #2563EB;
+
+}
+
+.type.schedule {
+
+    background: #ECFDF5;
+
+    color: #10B981;
+
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.screen-content-empty {
+
+    height: 360px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.screen-content-empty i {
+
+    font-size: 64px;
+
+    color: #CBD5E1;
+
+    margin-bottom: 20px;
+
+}
+
+.screen-content-empty h3 {
+
+    font-size: 28px;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+
+}
+
+.screen-content-empty p {
+
+    max-width: 420px;
+
+    color: #64748B;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.screen-content-footer {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 14px;
+
+    padding: 22px 30px;
+
+    border-top: 1px solid #EEF2F7;
+
+    background: #FFFFFF;
+
+}
+
+.screen-content-footer button {
+
+    min-width: 150px;
+
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.screen-content-body::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.screen-content-body::-webkit-scrollbar-thumb {
+
+    background: #CBD5E1;
+
+    border-radius: 30px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px) {
+
+    .screen-content-modal {
+
+        width: 95%;
+
+        height: 90vh;
+
+    }
+
+    .screen-content-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .screen-content-toolbar {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .screen-content-filter button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .screen-content-modal {
+
+        width: 100%;
+
+        height: 100vh;
+
+        border-radius: 0;
+
+    }
+
+    .screen-content-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .screen-content-thumb,
+
+    .playlist-calendar,
+
+    .schedule-calendar {
+
+        width: 100%;
+
+        height: 180px;
+
+    }
+
+    .screen-content-footer {
+
+        flex-direction: column;
+
+    }
+
+    .screen-content-footer button {
+
+        width: 100%;
+
+    }
+
+}

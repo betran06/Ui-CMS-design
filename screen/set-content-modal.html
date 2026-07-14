@@ -1,0 +1,495 @@
+<!-- =====================================================
+    SCREEN SET CONTENT MODAL
+===================================================== -->
+
+<div class="screen-content-overlay" id="screenContentModal">
+
+    <div class="screen-content-modal">
+
+        <!-- =====================================================
+            HEADER
+        ====================================================== -->
+
+        <div class="screen-content-header">
+
+            <h2>
+
+                Set Content
+
+            </h2>
+
+            <button class="screen-content-close">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+            TAB
+        ====================================================== -->
+
+        <div class="screen-content-tabs">
+
+            <button class="screen-content-tab active" data-tab="recent">
+
+                Recent
+
+            </button>
+
+            <button class="screen-content-tab" data-tab="content">
+
+                Content
+
+            </button>
+
+            <button class="screen-content-tab" data-tab="playlist">
+
+                Playlist
+
+            </button>
+
+            <button class="screen-content-tab" data-tab="schedule">
+
+                Schedule
+
+            </button>
+
+            <button class="screen-content-tab" data-tab="channel">
+
+                Channel
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+            TOOLBAR
+        ====================================================== -->
+
+        <div class="screen-content-toolbar">
+
+            <div class="screen-content-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search content...">
+
+            </div>
+
+            <div class="screen-content-filter">
+
+                <button>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    Date
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            INFO BAR
+        ====================================================== -->
+
+        <div class="screen-content-info">
+
+            <div class="screen-content-count">
+
+                <strong>
+
+                    2
+
+                </strong>
+
+                Items
+
+            </div>
+
+            <div class="screen-content-toggle">
+
+                <span>
+
+                    Hide unavailable
+
+                </span>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            RECENT
+        ====================================================== -->
+
+        <div class="screen-content-body active" id="recent">
+
+            <div class="screen-content-grid">
+
+                <!-- ==========================================
+                    CARD 1
+                =========================================== -->
+
+                <div class="screen-content-card">
+
+                    <label class="screen-content-radio">
+
+                        <input type="radio" name="screenContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="screen-content-thumb">
+
+                        <img src="https://placehold.co/180x110/F97316/ffffff?text=NEWS">
+
+                    </div>
+
+                    <div class="screen-content-card-body">
+
+                        <h3>
+
+                            Company News
+
+                        </h3>
+
+                        <span class="type image">
+
+                            Image
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==========================================
+                    CARD 2
+                =========================================== -->
+
+                <div class="screen-content-card">
+
+                    <label class="screen-content-radio">
+
+                        <input type="radio" name="screenContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="screen-content-thumb">
+
+                        <img src="https://placehold.co/180x110/1E293B/ffffff?text=VIDEO">
+
+                    </div>
+
+                    <div class="screen-content-card-body">
+
+                        <h3>
+
+                            Product Promotion
+
+                        </h3>
+
+                        <span class="type video">
+
+                            Video
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+            CONTENT
+        ====================================================== -->
+
+        <div class="screen-content-body" id="content">
+
+            <div class="screen-content-empty">
+
+                <i class="fa-regular fa-folder-open"></i>
+
+                <h3>
+
+                    Content Library
+
+                </h3>
+
+                <p>
+
+                    Browse images, videos, HTML pages,
+                    PDF documents and other uploaded media.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            PLAYLIST
+        ====================================================== -->
+
+        <div class="screen-content-body" id="playlist">
+
+            <div class="screen-content-grid">
+
+                <!-- Playlist Card -->
+
+                <div class="screen-content-card">
+
+                    <label class="screen-content-radio">
+
+                        <input type="radio" name="screenContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="playlist-calendar">
+
+                        <i class="fa-solid fa-list"></i>
+
+                    </div>
+
+                    <div class="screen-content-card-body">
+
+                        <h3>
+
+                            Company Playlist
+
+                        </h3>
+
+                        <span class="type html">
+
+                            Playlist
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="screen-content-card">
+
+                    <label class="screen-content-radio">
+
+                        <input type="radio" name="screenContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="playlist-calendar">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                    </div>
+
+                    <div class="screen-content-card-body">
+
+                        <h3>
+
+                            Promotion Playlist
+
+                        </h3>
+
+                        <span class="type html">
+
+                            Playlist
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            SCHEDULE
+        ====================================================== -->
+
+        <div class="screen-content-body" id="schedule">
+
+            <div class="screen-content-grid">
+
+                <!-- Schedule Card -->
+
+                <div class="screen-content-card">
+
+                    <label class="screen-content-radio">
+
+                        <input type="radio" name="screenContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="schedule-calendar">
+
+                        <div class="calendar-day">
+
+                            08
+
+                        </div>
+
+                        <div class="calendar-month">
+
+                            Jul
+
+                        </div>
+
+                    </div>
+
+                    <div class="screen-content-card-body">
+
+                        <h3>
+
+                            Office Schedule
+
+                        </h3>
+
+                        <span class="type image">
+
+                            General
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="screen-content-card">
+
+                    <label class="screen-content-radio">
+
+                        <input type="radio" name="screenContent">
+
+                        <span></span>
+
+                    </label>
+
+                    <div class="schedule-calendar">
+
+                        <div class="calendar-day">
+
+                            14
+
+                        </div>
+
+                        <div class="calendar-month">
+
+                            Jul
+
+                        </div>
+
+                    </div>
+
+                    <div class="screen-content-card-body">
+
+                        <h3>
+
+                            Lobby Schedule
+
+                        </h3>
+
+                        <span class="type image">
+
+                            General
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            CHANNEL
+        ====================================================== -->
+
+        <div class="screen-content-body" id="channel">
+
+            <div class="screen-content-empty">
+
+                <i class="fa-solid fa-tower-broadcast"></i>
+
+                <h3>
+
+                    Channel
+
+                </h3>
+
+                <p>
+
+                    Connect your screen with
+                    News, Weather or Social Media
+                    channels.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+            FOOTER
+        ====================================================== -->
+
+        <div class="screen-content-footer">
+
+            <button class="outline-btn screen-content-cancel">
+
+                Cancel
+
+            </button>
+
+            <button class="primary-btn screen-content-publish">
+
+                Publish
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

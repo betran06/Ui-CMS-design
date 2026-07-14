@@ -120,7 +120,7 @@ function setContent() {
 
     const button = document.querySelector(".primary-btn");
 
-    if (!button) return;
+    if (!button || button.id === "setContentBtn") return;
 
     button.onclick = () => {
 
